@@ -34,14 +34,14 @@ export async function generateProductReview(data: ProductData): Promise<Partial<
       .join('\n')}
     `;
 
-    const reviewCompletion = await openai.chat.completions.create({
+    const reviewCompletion = await openai.createCompletion({
       model: 'gpt-4',
-      messages: [{ role: 'user', content: reviewPrompt }],
+      prompt: reviewPrompt,
       max_tokens: 1500,
       temperature: 0.7,
     });
 
-    const reviewContent = reviewCompletion.choices[0].message.content || '';
+    const reviewContent = reviewCompletion.data.choices[0].text || '';
 
     // Generate SEO metadata
     const seoPrompt = `Generate SEO metadata for a product review of ${data.productName}:
@@ -51,28 +51,28 @@ export async function generateProductReview(data: ProductData): Promise<Partial<
     
     Consider the product category: ${data.category}`;
 
-    const seoCompletion = await openai.chat.completions.create({
+    const seoCompletion = await openai.createCompletion({
       model: 'gpt-4',
-      messages: [{ role: 'user', content: seoPrompt }],
+      prompt: seoPrompt,
       max_tokens: 500,
       temperature: 0.7,
     });
 
-    const seoContent = seoCompletion.choices[0].message.content || '';
+    const seoContent = seoCompletion.data.choices[0].text || '';
     const [metaTitle, metaDescription, keywordsText] = seoContent.split('\n\n');
 
     // Generate pros and cons
     const prosConsPrompt = `List the main pros and cons for ${data.productName}:
     Consider: performance, features, price, build quality, and user experience.`;
 
-    const prosConsCompletion = await openai.chat.completions.create({
+    const prosConsCompletion = await openai.createCompletion({
       model: 'gpt-4',
-      messages: [{ role: 'user', content: prosConsPrompt }],
+      prompt: prosConsPrompt,
       max_tokens: 500,
       temperature: 0.7,
     });
 
-    const prosConsContent = prosConsCompletion.choices[0].message.content || '';
+    const prosConsContent = prosConsCompletion.data.choices[0].text || '';
     const [prosText, consText] = prosConsContent.split('\n\nCons:');
     const pros = prosText
       .replace('Pros:', '')
@@ -86,7 +86,7 @@ export async function generateProductReview(data: ProductData): Promise<Partial<
 
     // Generate product image using DALL·E
     const imagePrompt = `Professional product photo of ${data.productName}, ${data.category}, white background, studio lighting, photorealistic`;
-    const imageResponse = await openai.images.generate({
+    const imageResponse = await openai.createImage({
       prompt: imagePrompt,
       n: 1,
       size: '1024x1024',
@@ -101,7 +101,7 @@ export async function generateProductReview(data: ProductData): Promise<Partial<
 
     const galleryImages = await Promise.all(
       galleryPrompts.map((prompt) =>
-        openai.images.generate({
+        openai.createImage({
           prompt: `Professional product photo of ${prompt}, white background, studio lighting, photorealistic`,
           n: 1,
           size: '1024x1024',
@@ -117,10 +117,8 @@ export async function generateProductReview(data: ProductData): Promise<Partial<
       price: data.basePrice,
       rating: 0, // Will be updated based on user reviews
       reviewCount: 0,
-      imageUrl: imageResponse.data[0].url ?? '',
-      gallery: galleryImages
-        .map((img) => img.data[0].url)
-        .filter((url): url is string => url !== undefined),
+      imageUrl: imageResponse.data.data[0].url,
+      gallery: galleryImages.map((img) => img.data.data[0].url),
       pros,
       cons,
       specifications: data.specifications,
