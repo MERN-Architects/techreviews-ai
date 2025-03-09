@@ -49,7 +49,7 @@ const PostPage = () => {
             <div className="bg-gray-50 p-6 rounded-lg mb-8">
               <h2 className="text-2xl font-bold mb-4">Specifications</h2>
               <div className="grid grid-cols-2 gap-4">
-                {Object.entries(post.specs).map(([key, value]) => (
+                {Object.entries(post.specifications).map(([key, value]) => (
                   <div key={key} className="flex justify-between">
                     <span className="font-medium capitalize">{key}:</span>
                     <span>{value}</span>
