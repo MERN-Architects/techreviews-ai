@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import OpenAI from 'openai';
+import { Product } from '../types/index.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -12,7 +13,7 @@ const openai = new OpenAI({
 
 const categories = ['Gaming', 'Laptops', 'Smartphones', 'Smart Home'];
 
-async function generateProductWithAI() {
+async function generateProductWithAI(): Promise<Product> {
   const category = categories[Math.floor(Math.random() * categories.length)];
   
   const prompt = `Generate a realistic tech product review for a ${category} product in JSON format with the following structure:
@@ -68,7 +69,7 @@ async function generateProductWithAI() {
   };
 }
 
-async function updateProductsFile() {
+async function updateProductsFile(count: number = 1) {
   try {
     const productsPath = path.join(process.cwd(), 'data', 'products.json');
     let currentData;
@@ -78,29 +79,32 @@ async function updateProductsFile() {
     } catch (error) {
       currentData = { products: [] };
     }
+
+    console.log(`Generating ${count} products...`);
     
-    const newProduct = await generateProductWithAI();
-    currentData.products = [newProduct, ...currentData.products];
+    for (let i = 0; i < count; i++) {
+      console.log(`Generating product ${i + 1} of ${count}...`);
+      const newProduct = await generateProductWithAI();
+      currentData.products = [newProduct, ...currentData.products];
+      
+      // Wait for 1 second between requests to avoid rate limiting
+      if (i < count - 1) {
+        await new Promise(resolve => setTimeout(resolve, 1000));
+      }
+    }
     
     fs.writeFileSync(productsPath, JSON.stringify(currentData, null, 2));
-    console.log('Product added successfully!');
+    console.log('Products updated successfully!');
   } catch (error) {
     console.error('Error updating products:', error);
     process.exit(1);
   }
 }
 
-async function generateBulkProducts() {
-  console.log('Generating 28 products...');
-  
-  for (let i = 0; i < 28; i++) {
-    console.log(`Generating product ${i + 1} of 28...`);
-    await updateProductsFile();
-    // Wait for 1 second between requests to avoid rate limiting
-    await new Promise(resolve => setTimeout(resolve, 1000));
-  }
-  
-  console.log('Finished generating products!');
+// Run script if executed directly
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
+  const count = parseInt(process.argv[2]) || 1;
+  updateProductsFile(count);
 }
 
-generateBulkProducts().catch(console.error); 
+export { updateProductsFile, generateProductWithAI }; 
