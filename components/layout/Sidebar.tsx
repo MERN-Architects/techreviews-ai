@@ -3,7 +3,20 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import AdSense from '../AdSense';
-import productsData from '../../data/products.json';
+import { products } from '@/data/products.json';
+import type { Product } from '@/types/index';
+
+// Import products data
+const productsData = {
+  products: [] as Product[]
+};
+
+try {
+  const data = require('../../data/products.json');
+  productsData.products = data.products;
+} catch (error) {
+  console.error('Error loading products:', error);
+}
 
 export default function Sidebar() {
   const products = productsData.products;
@@ -56,7 +69,7 @@ export default function Sidebar() {
         <div className="space-y-2">
           {categories.map((category) => (
             <Link
-              key={category.name}
+              key={category.name} 
               href={`/category/${category.slug}`}
               className="flex items-center justify-between py-2 text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
             >

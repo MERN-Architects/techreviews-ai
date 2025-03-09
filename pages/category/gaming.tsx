@@ -4,11 +4,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import Layout from '@/components/layout/Layout';
-import productsData from '@/data/products.json';
+import { products } from '@/data/products.json';
 
 export default function GamingCategoryPage() {
   const [sortBy, setSortBy] = useState('latest');
-  const gamingProducts = productsData.products.filter(p => p.category === 'Gaming');
+  const gamingProducts = products.filter(p => p.category === 'Gaming');
 
   const sortOptions = [
     { value: 'latest', label: 'Latest' },
