@@ -70,6 +70,7 @@ const productData: Product = {
   publishDate: '2024-03-08',
   lastUpdated: '2024-03-08',
   status: 'published',
+  pageLink: '/product/macbook-pro-m3-max',
 };
 
 export default function ProductDetail({ product }: { product: Product }) {

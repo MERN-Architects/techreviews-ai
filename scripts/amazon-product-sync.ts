@@ -6,12 +6,21 @@ dotenv.config();
 
 const prisma = new PrismaClient();
 
+const accessKey = process.env.AMAZON_ACCESS_KEY;
+const secretKey = process.env.AMAZON_SECRET_KEY;
+const partnerTag = process.env.AMAZON_PARTNER_TAG;
+
+if (!accessKey || !secretKey || !partnerTag) {
+  console.error('Missing required environment variables');
+  process.exit(1);
+}
+
 const api = new ProductAdvertisingAPIv1({
-  accessKey: process.env.AMAZON_ACCESS_KEY,
-  secretKey: process.env.AMAZON_SECRET_KEY,
-  partnerTag: process.env.AMAZON_PARTNER_TAG,
+  accessKey,
+  secretKey,
+  partnerTag,
   partnerType: 'Associates',
-  marketplace: 'www.amazon.com',
+  region: 'us-east-1'
 });
 
 async function searchAndSaveProducts(keywords: string) {

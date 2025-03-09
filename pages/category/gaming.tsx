@@ -5,6 +5,8 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import Layout from '@/components/layout/Layout';
 import { products } from '@/data/products.json';
+import RatingStars from '@/components/RatingStars';
+import Newsletter from '@/components/Newsletter';
 
 export default function GamingCategoryPage() {
   const [sortBy, setSortBy] = useState('latest');
@@ -119,48 +121,22 @@ export default function GamingCategoryPage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {sortedProducts.map((product) => (
-              <motion.div
-                key={product._id}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                whileHover={{ y: -5 }}
-                className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100"
-              >
-                <Link href={product.pageLink} className="block">
-                  <div className="relative h-56">
-                    <Image
-                      src={product.imageUrl}
-                      alt={product.title}
-                      fill
-                      className="object-cover"
-                    />
-                    <div className="absolute top-4 right-4 bg-black/80 text-white px-3 py-1 rounded-full text-sm font-medium">
-                      ${product.price}
-                    </div>
-                  </div>
-                  <div className="p-6">
-                    <div className="flex items-center justify-between mb-3">
-                      <span className="px-3 py-1 bg-primary-50 text-primary-600 rounded-full text-sm font-medium">
-                        {product.category}
-                      </span>
-                      <div className="flex items-center text-yellow-400">
-                        <span className="text-lg mr-1">★</span>
-                        <span className="text-gray-600 text-sm">{product.rating}</span>
-                      </div>
-                    </div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2 hover:text-primary-600 transition-colors">
-                      {product.title}
-                    </h3>
-                    <p className="text-gray-600 mb-4 line-clamp-2">{product.description}</p>
-                    <div className="flex items-center justify-between">
-                      <span className="text-sm text-gray-500">{product.reviewCount} reviews</span>
-                      <span className="inline-flex items-center justify-center px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors">
-                        View Details
-                      </span>
-                    </div>
-                  </div>
-                </Link>
-              </motion.div>
+              <Link href={`/product/${product.slug}`} key={product._id} className="group">
+                <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                  <Image
+                    src={product.imageUrl}
+                    alt={product.title}
+                    width={500}
+                    height={500}
+                    className="h-full w-full object-cover object-center group-hover:opacity-75"
+                  />
+                </div>
+                <h3 className="mt-4 text-sm text-gray-700">{product.title}</h3>
+                <div className="mt-2">
+                  <RatingStars rating={product.rating} reviewCount={product.reviewCount} size="sm" />
+                </div>
+                <p className="mt-1 text-lg font-medium text-gray-900">${product.price}</p>
+              </Link>
             ))}
           </div>
         </div>
@@ -215,21 +191,7 @@ export default function GamingCategoryPage() {
             <p className="text-lg mb-6">
               Subscribe for the latest gaming hardware reviews and tech news.
             </p>
-            <form className="max-w-md mx-auto" onSubmit={(e) => e.preventDefault()}>
-              <div className="flex gap-4">
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="flex-1 px-4 py-3 rounded-lg text-gray-900"
-                />
-                <button
-                  type="submit"
-                  className="px-6 py-3 bg-white text-primary-600 rounded-lg font-medium hover:bg-gray-100 transition-colors"
-                >
-                  Subscribe
-                </button>
-              </div>
-            </form>
+            <Newsletter />
           </div>
         </div>
       </section>

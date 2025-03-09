@@ -16,7 +16,7 @@ export interface Product {
   cons: string[];
   affiliateLinks: {
     amazon: string;
-    bestbuy: string;
+    bestbuy?: string;
   };
   tags: string[];
   metaTitle: string;
@@ -27,6 +27,9 @@ export interface Product {
   lastUpdated: string;
   status: string;
   discount?: number; // Optional discount field
+  onSale?: boolean;
+  amazonUrl?: string;
+  asin?: string;
 }
 
 export interface Category {
@@ -72,4 +75,41 @@ export interface SeoConfig {
   ogImage: string;
   canonical: string;
   robotsTxt: string;
-} 
+}
+
+export interface GamingArticleBase {
+  title: string;
+  content: string;
+  image: string;
+  category: string;
+  date: string;
+}
+
+export interface UpcomingGameArticle extends GamingArticleBase {
+  keyFeatures: string[];
+  releaseInfo: {
+    expectedDate: string;
+    platforms: string[];
+    publisher: string;
+    developer: string;
+  };
+}
+
+export interface ComparisonArticle extends GamingArticleBase {
+  comparison: {
+    performance: {
+      ps5: string;
+      xbox: string;
+    };
+    storage: {
+      ps5: string;
+      xbox: string;
+    };
+    price: {
+      ps5: string;
+      xbox: string;
+    };
+  };
+}
+
+export type GamingArticle = UpcomingGameArticle | ComparisonArticle;

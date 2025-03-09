@@ -100,11 +100,12 @@ const SmartHomeDetail = () => {
             <p className="text-gray-600">{article.content}</p>
           </div>
 
-          {article.products && (
+          {'products' in article && article.products && (
             <div className="grid md:grid-cols-2 gap-8 mb-8">
               {article.products.map((product, index) => (
                 <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
-                  <h3 className="text-xl font-bold mb-4">{product.name}</h3>
+                  <h3 className="text-xl font-bold mb-2">{product.name}</h3>
+                  <p className="text-primary-600 font-semibold mb-2">{product.price}</p>
                   <div className="flex items-center mb-4">
                     <div className="flex text-yellow-400">
                       {[...Array(5)].map((_, i) => (
@@ -119,16 +120,23 @@ const SmartHomeDetail = () => {
                         </svg>
                       ))}
                     </div>
-                    <span className="ml-2 text-gray-600">{product.rating}/5</span>
+                    <span className="ml-2 text-gray-600">{product.rating.toFixed(1)}</span>
                   </div>
-                  <p className="text-2xl font-bold text-green-600 mb-4">
-                    {product.price}
-                  </p>
                   <ul className="space-y-2">
-                    {product.features.map((feature, i) => (
-                      <li key={i} className="flex items-center text-gray-600">
-                        <svg className="w-5 h-5 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    {product.features.map((feature, featureIndex) => (
+                      <li key={featureIndex} className="flex items-center text-gray-600">
+                        <svg
+                          className="w-5 h-5 text-green-500 mr-2"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M5 13l4 4L19 7"
+                          />
                         </svg>
                         {feature}
                       </li>
@@ -139,14 +147,24 @@ const SmartHomeDetail = () => {
             </div>
           )}
 
-          {article.features && (
+          {'features' in article && article.features && (
             <div className="bg-green-50 p-6 rounded-lg mb-8">
               <h2 className="text-xl font-bold text-green-700 mb-4">Key Features</h2>
               <ul className="grid md:grid-cols-2 gap-4">
                 {article.features.map((feature, index) => (
-                  <li key={index} className="flex items-center text-green-600">
-                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  <li key={index} className="flex items-center">
+                    <svg
+                      className="w-5 h-5 text-green-500 mr-2"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
                     </svg>
                     {feature}
                   </li>
@@ -155,16 +173,26 @@ const SmartHomeDetail = () => {
             </div>
           )}
 
-          {article.considerations && (
+          {'considerations' in article && article.considerations && (
             <div className="bg-blue-50 p-6 rounded-lg">
               <h2 className="text-xl font-bold text-blue-700 mb-4">Key Considerations</h2>
               <ul className="grid md:grid-cols-2 gap-4">
-                {article.considerations.map((item, index) => (
-                  <li key={index} className="flex items-center text-blue-600">
-                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                {article.considerations.map((consideration, index) => (
+                  <li key={index} className="flex items-center">
+                    <svg
+                      className="w-5 h-5 text-blue-500 mr-2"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
                     </svg>
-                    {item}
+                    {consideration}
                   </li>
                 ))}
               </ul>

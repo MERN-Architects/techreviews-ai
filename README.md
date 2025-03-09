@@ -1,30 +1,31 @@
 # TechReviews.AI
 
-AI-powered tech product reviews and recommendations platform built with Next.js.
+A modern tech review platform built with Next.js, TypeScript, and MongoDB.
 
 ## Features
 
-- 🤖 AI-generated product reviews
-- 📱 Responsive design for all devices
-- 🔍 Advanced search and filtering
-- 📊 Product comparisons
-- 🌙 Daily product updates
-- 💬 User comments and ratings
+- Product reviews and comparisons
+- Advanced search functionality
+- Rating and review system
+- MongoDB database integration
+- OpenAI powered content generation
+- Amazon Product API integration
+- Responsive design with Tailwind CSS
 
 ## Tech Stack
 
-- Next.js
+- Next.js 14
 - TypeScript
-- Tailwind CSS
+- MongoDB with Prisma ORM
 - OpenAI API
-- Framer Motion
-- GitHub Actions
+- Amazon Product Advertising API
+- Tailwind CSS
 
 ## Getting Started
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/techreviews-ai.git
+git clone https://github.com/yourusername/techreviews-ai.git
 cd techreviews-ai
 ```
 
@@ -34,10 +35,13 @@ npm install
 ```
 
 3. Set up environment variables:
-- Create a `.env.local` file in the root directory
-- Add your OpenAI API key:
+Create a .env file in the root directory and add:
 ```
-OPENAI_API_KEY=your-api-key-here
+MONGODB_URI=your_mongodb_uri
+OPENAI_API_KEY=your_openai_api_key
+AMAZON_ACCESS_KEY=your_amazon_access_key
+AMAZON_SECRET_KEY=your_amazon_secret_key
+AMAZON_PARTNER_TAG=your_amazon_partner_tag
 ```
 
 4. Run the development server:
@@ -45,24 +49,23 @@ OPENAI_API_KEY=your-api-key-here
 npm run dev
 ```
 
-5. Open [http://localhost:3000](http://localhost:3000) in your browser.
+5. Generate database schema:
+```bash
+npx prisma generate
+```
 
-## Automatic Updates
+## Scripts
 
-The project uses GitHub Actions to automatically generate and add new product reviews daily. To set this up:
-
-1. Go to your GitHub repository settings
-2. Navigate to Secrets and Variables > Actions
-3. Add a new secret with name `OPENAI_API_KEY` and your API key as the value
+- `npm run dev`: Start development server
+- `npm run build`: Build for production
+- `npm start`: Start production server
+- `npm run lint`: Run ESLint
+- `npm run generate`: Generate test products
 
 ## Contributing
 
-1. Fork the repository
-2. Create your feature branch: `git checkout -b feature/amazing-feature`
-3. Commit your changes: `git commit -m 'Add amazing feature'`
-4. Push to the branch: `git push origin feature/amazing-feature`
-5. Open a Pull Request
+Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. 
+This project is licensed under the MIT License. 

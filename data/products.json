@@ -29,7 +29,8 @@
         "warranty": "1 year"
       },
       "affiliateLinks": {
-        "amazon": "https://amazon.com/dp/hht85l"
+        "amazon": "https://amazon.com/dp/hht85l",
+        "bestbuy": "https://bestbuy.com/site/apple-gaming-pro-2024"
       },
       "category": "Gaming",
       "tags": [
@@ -47,10 +48,9 @@
         "tech"
       ],
       "author": "Tech Editor",
-      "publishDate": "2025-03-09T04:42:18.557Z",
-      "lastUpdated": "2025-03-09T04:42:18.558Z",
-      "status": "published",
-      "discount": 10
+      "publishDate": "2024-03-09T04:42:18.557Z",
+      "lastUpdated": "2024-03-09T04:42:18.557Z",
+      "status": "published"
     },
     {
       "_id": "product_1741495338558_1",
