@@ -2,9 +2,12 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['localhost'],
+    domains: ['oaidalleapicontent.blob.core.windows.net'],
     unoptimized: true
-  }
+  },
+  experimental: {
+    serverActions: true,
+  },
 };
 
-module.exports = nextConfig; 
+export default nextConfig; 
