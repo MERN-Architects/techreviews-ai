@@ -69,45 +69,39 @@ async function generateProductWithAI(): Promise<Product> {
   };
 }
 
-async function fetchLatestProducts(): Promise<Product[]> {
-  try {
-    // প্রতিদিন একটি নতুন প্রোডাক্ট জেনারেট করুন
-    const newProduct = await generateProductWithAI();
-    return [newProduct];
-  } catch (error) {
-    console.error('Error generating product:', error);
-    return [];
-  }
-}
-
 async function updateProductsFile() {
   try {
-    // বর্তমান প্রোডাক্ট ডাটা পড়ুন
     const productsPath = path.join(process.cwd(), 'data', 'products.json');
-    const currentData = JSON.parse(fs.readFileSync(productsPath, 'utf-8'));
+    let currentData;
     
-    // নতুন প্রোডাক্ট ফেচ করুন
-    const newProducts = await fetchLatestProducts();
-    
-    if (newProducts.length > 0) {
-      // নতুন প্রোডাক্ট যোগ করুন
-      currentData.products = [...newProducts, ...currentData.products];
-      
-      // ফাইলে সেভ করুন
-      fs.writeFileSync(productsPath, JSON.stringify(currentData, null, 2));
-      console.log('Products updated successfully!');
-    } else {
-      console.log('No new products to add.');
+    try {
+      currentData = JSON.parse(fs.readFileSync(productsPath, 'utf-8'));
+    } catch (error) {
+      currentData = { products: [] };
     }
+    
+    const newProduct = await generateProductWithAI();
+    currentData.products = [newProduct, ...currentData.products];
+    
+    fs.writeFileSync(productsPath, JSON.stringify(currentData, null, 2));
+    console.log('Product added successfully!');
   } catch (error) {
     console.error('Error updating products:', error);
     process.exit(1);
   }
 }
 
-// স্ক্রিপ্ট রান করুন যদি ডাইরেক্টলি এক্সিকিউট করা হয়
-if (process.argv[1] === fileURLToPath(import.meta.url)) {
-  updateProductsFile();
+async function generateBulkProducts() {
+  console.log('Generating 28 products...');
+  
+  for (let i = 0; i < 28; i++) {
+    console.log(`Generating product ${i + 1} of 28...`);
+    await updateProductsFile();
+    // Wait for 1 second between requests to avoid rate limiting
+    await new Promise(resolve => setTimeout(resolve, 1000));
+  }
+  
+  console.log('Finished generating products!');
 }
 
-export { updateProductsFile }; 
+generateBulkProducts().catch(console.error); 

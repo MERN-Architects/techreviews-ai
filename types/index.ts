@@ -9,17 +9,14 @@ export interface Product {
   reviewCount: number;
   imageUrl: string;
   gallery: string[];
+  category: string;
+  pageLink: string;
+  specifications: Record<string, string>;
   pros: string[];
   cons: string[];
-  specifications: {
-    [key: string]: string;
-  };
   affiliateLinks: {
     amazon: string;
-    [key: string]: string;
   };
-  category: string;
-  subcategory?: string;
   tags: string[];
   metaTitle: string;
   metaDescription: string;
@@ -27,7 +24,8 @@ export interface Product {
   author: string;
   publishDate: string;
   lastUpdated: string;
-  status: 'draft' | 'published' | 'archived';
+  status: string;
+  discount?: number; // Optional discount field
 }
 
 export interface Category {

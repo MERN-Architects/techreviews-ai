@@ -1,12 +1,13 @@
+import React from 'react';
 import { useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import Layout from '@/components/layout/Layout';
-import { Product } from '@/types';
-import AdSense from '@/components/AdSense';
-import productsData from '@/data/products.json';
+import Layout from '../components/layout/Layout';
+import { Product } from '../types';
+import AdSense from '../components/AdSense';
+import productsData from '../data/products.json';
 
 export default function Home() {
   const [activeCategory, setActiveCategory] = useState('All');
@@ -28,7 +29,7 @@ export default function Home() {
   const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
 
   // Generate page numbers array
-  const pageNumbers = [];
+  const pageNumbers: number[] = [];
   for (let i = 1; i <= totalPages; i++) {
     pageNumbers.push(i);
   }
@@ -133,7 +134,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               whileHover={{ y: -5 }}
-              className="bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden flex flex-col"
+              className="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden flex flex-col"
             >
               <Link href={product.pageLink} className="block flex-1">
                 <div className="relative h-48 sm:h-52 lg:h-56">
@@ -154,22 +155,24 @@ export default function Home() {
                 </div>
                 <div className="p-4 sm:p-5 lg:p-6 flex-1 flex flex-col">
                   <div className="flex items-center justify-between mb-2">
-                    <span className="px-3 py-1 bg-primary-50 text-primary-600 rounded-full text-xs sm:text-sm font-medium">
+                    <span className="px-3 py-1 bg-primary-50 dark:bg-primary-900/50 text-primary-600 dark:text-primary-400 rounded-full text-xs sm:text-sm font-medium">
                       {product.category}
                     </span>
                     <div className="flex items-center text-yellow-400">
                       <span className="text-lg">★</span>
-                      <span className="text-gray-600 text-sm ml-1">{product.rating}</span>
+                      <span className="text-gray-600 dark:text-gray-400 text-sm ml-1">
+                        {Number(product.rating).toFixed(1)}
+                      </span>
                     </div>
                   </div>
-                  <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 line-clamp-2 hover:text-primary-600 transition-colors">
+                  <h3 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-2 line-clamp-2 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
                     {product.title}
                   </h3>
-                  <p className="text-gray-600 text-sm sm:text-base mb-4 line-clamp-2 flex-1">
+                  <p className="text-gray-600 dark:text-gray-400 text-sm sm:text-base mb-4 line-clamp-2 flex-1">
                     {product.description}
                   </p>
                   <div className="flex items-center justify-between mt-auto">
-                    <span className="text-sm text-gray-500">
+                    <span className="text-sm text-gray-500 dark:text-gray-400">
                       {product.reviewCount} reviews
                     </span>
                     <span className="inline-flex items-center justify-center px-4 py-2 bg-primary-600 text-white text-sm rounded-lg hover:bg-primary-700 transition-colors">

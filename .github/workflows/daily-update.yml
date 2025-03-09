@@ -26,14 +26,17 @@ jobs:
       - name: Run update script
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        run: npx ts-node scripts/updateProducts.ts
+          AMAZON_ACCESS_KEY: ${{ secrets.AMAZON_ACCESS_KEY }}
+          AMAZON_SECRET_KEY: ${{ secrets.AMAZON_SECRET_KEY }}
+          AMAZON_PARTNER_TAG: ${{ secrets.AMAZON_PARTNER_TAG }}
+        run: NODE_OPTIONS="--loader ts-node/esm" npx ts-node scripts/amazon-product-sync.ts
         
       - name: Commit changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add data/products.json
-          git commit -m "Daily product update $(date +'%Y-%m-%d')" || exit 0
+          git add .
+          git commit -m "Daily update $(date +'%Y-%m-%d')" || exit 0
           
       - name: Push changes
         uses: ad-m/github-push-action@master

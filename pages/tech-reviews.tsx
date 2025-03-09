@@ -122,7 +122,7 @@ export default function TechReviewsPage() {
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value)}
                 className="px-4 py-2 rounded-lg bg-white border border-gray-200 text-gray-700 focus:outline-none focus:ring-2 focus:ring-primary-500"
-              >
+            >
                 {sortOptions.map((option) => (
                   <option key={option.value} value={option.value}>
                     {option.label}
@@ -148,21 +148,21 @@ export default function TechReviewsPage() {
               >
                 <Link href={product.pageLink} className="block">
                   <div className="relative h-56">
-                    <Image
+                  <Image
                       src={product.imageUrl}
                       alt={product.title}
-                      fill
-                      className="object-cover"
-                    />
+                    fill
+                    className="object-cover"
+                  />
                     <div className="absolute top-4 right-4 bg-black/80 text-white px-3 py-1 rounded-full text-sm font-medium">
                       ${product.price}
                     </div>
-                  </div>
-                  <div className="p-6">
+                </div>
+                <div className="p-6">
                     <div className="flex items-center justify-between mb-3">
                       <span className="px-3 py-1 bg-primary-50 text-primary-600 rounded-full text-sm font-medium">
                         {product.category}
-                      </span>
+                  </span>
                       <div className="flex items-center text-yellow-400">
                         <span className="text-lg mr-1">★</span>
                         <span className="text-gray-600 text-sm">{product.rating}</span>
@@ -176,14 +176,14 @@ export default function TechReviewsPage() {
                       <span className="text-sm text-gray-500">{product.reviewCount} reviews</span>
                       <span className="inline-flex items-center justify-center px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors">
                         Read Review
-                      </span>
-                    </div>
+                    </span>
                   </div>
-                </Link>
+                </div>
+              </Link>
               </motion.div>
-            ))}
-          </div>
+          ))}
         </div>
+      </div>
       </section>
 
       {/* Review Process */}

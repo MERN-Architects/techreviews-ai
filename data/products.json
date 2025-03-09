@@ -1,747 +1,1442 @@
 {
   "products": [
     {
-      "_id": "1",
-      "title": "PlayStation 5 Pro",
-      "slug": "playstation-5-pro",
-      "description": "Next-gen gaming console with enhanced graphics and performance.",
-      "price": 599,
-      "rating": 4.9,
-      "reviewCount": 234,
+      "_id": "product_1741495338557_0",
+      "title": "Apple Gaming Pro 2024",
+      "slug": "apple-gaming-pro-2024",
+      "description": "Experience the next level of gaming with the Apple Gaming Pro 2024. This premium device offers exceptional performance and innovative features.",
+      "content": "Detailed review of the Apple Gaming Pro 2024. This product represents the pinnacle of gaming technology.",
+      "price": 499.99,
+      "rating": 4.369005797815348,
+      "reviewCount": 61,
       "imageUrl": "/images/placeholder.jpg",
+      "gallery": [
+        "/images/placeholder.jpg"
+      ],
+      "pageLink": "/product/apple-gaming-pro-2024",
+      "pros": [
+        "High performance",
+        "Long battery life",
+        "Premium build quality"
+      ],
+      "cons": [
+        "Premium price point",
+        "Limited availability"
+      ],
+      "specifications": {
+        "brand": "Apple",
+        "model": "Pro 2024",
+        "warranty": "1 year"
+      },
+      "affiliateLinks": {
+        "amazon": "https://amazon.com/dp/hht85l"
+      },
       "category": "Gaming",
-      "pageLink": "/post/1",
-      "content": "The PlayStation 5 Pro represents the next evolution in console gaming...",
-      "specs": {
-        "processor": "Custom AMD Zen 2",
-        "gpu": "Custom AMD RDNA 3",
-        "memory": "16GB GDDR6",
-        "storage": "1TB NVMe SSD"
-      },
-      "publishDate": "2024-03-20",
-      "author": "Tech Review Team"
+      "tags": [
+        "gaming",
+        "apple",
+        "tech",
+        "review"
+      ],
+      "metaTitle": "Apple Gaming Pro 2024 Review - TechReviews.AI",
+      "metaDescription": "Comprehensive review of the Apple Gaming Pro 2024. Find out if this gaming device is worth your investment.",
+      "keywords": [
+        "gaming",
+        "apple",
+        "review",
+        "tech"
+      ],
+      "author": "Tech Editor",
+      "publishDate": "2025-03-09T04:42:18.557Z",
+      "lastUpdated": "2025-03-09T04:42:18.558Z",
+      "status": "published",
+      "discount": 10
     },
     {
-      "_id": "2",
-      "title": "Xbox Series X",
-      "slug": "xbox-series-x",
-      "description": "Microsoft's flagship gaming console with true 4K gaming capabilities.",
-      "price": 499,
-      "rating": 4.8,
-      "reviewCount": 189,
+      "_id": "product_1741495338558_1",
+      "title": "Samsung Laptops Pro 2025",
+      "slug": "samsung-laptops-pro-2025",
+      "description": "Experience the next level of laptops with the Samsung Laptops Pro 2025. This premium device offers exceptional performance and innovative features.",
+      "content": "Detailed review of the Samsung Laptops Pro 2025. This product represents the pinnacle of laptops technology.",
+      "price": 599.99,
+      "rating": 4.1714877942796065,
+      "reviewCount": 76,
       "imageUrl": "/images/placeholder.jpg",
-      "category": "Gaming",
-      "pageLink": "/post/2",
-      "content": "The Xbox Series X is Microsoft's most powerful console yet...",
-      "specs": {
-        "processor": "Custom AMD Zen 2",
-        "gpu": "12 TFLOPS RDNA 2",
-        "memory": "16GB GDDR6",
-        "storage": "1TB Custom NVMe"
+      "gallery": [
+        "/images/placeholder.jpg"
+      ],
+      "pageLink": "/product/samsung-laptops-pro-2025",
+      "pros": [
+        "Long battery life",
+        "Premium build quality",
+        "Great value for money"
+      ],
+      "cons": [
+        "Premium price point",
+        "Limited availability"
+      ],
+      "specifications": {
+        "brand": "Samsung",
+        "model": "Pro 2025",
+        "warranty": "1 year"
       },
-      "publishDate": "2024-03-19",
-      "author": "Tech Review Team"
-    },
-    {
-      "_id": "3",
-      "title": "Nintendo Switch OLED",
-      "slug": "nintendo-switch-oled",
-      "description": "Enhanced portable gaming with vibrant OLED display.",
-      "price": 349,
-      "rating": 4.7,
-      "reviewCount": 156,
-      "imageUrl": "/images/placeholder.jpg",
-      "category": "Gaming",
-      "pageLink": "/post/3",
-      "content": "The Nintendo Switch OLED Model brings a stunning screen upgrade...",
-      "specs": {
-        "display": "7-inch OLED",
-        "storage": "64GB",
-        "battery": "4.5-9 hours",
-        "weight": "0.93 pounds"
+      "affiliateLinks": {
+        "amazon": "https://amazon.com/dp/lz480t"
       },
-      "publishDate": "2024-03-18",
-      "author": "Tech Review Team"
-    },
-    {
-      "_id": "4",
-      "title": "Steam Deck OLED",
-      "slug": "steam-deck-oled",
-      "description": "Valve's portable PC gaming device with OLED screen.",
-      "price": 549,
-      "rating": 4.8,
-      "reviewCount": 145,
-      "imageUrl": "/images/placeholder.jpg",
-      "category": "Gaming",
-      "pageLink": "/post/4",
-      "content": "The Steam Deck OLED improves upon the original with a better screen...",
-      "specs": {
-        "processor": "AMD APU",
-        "display": "7.4-inch OLED",
-        "memory": "16GB LPDDR5",
-        "storage": "512GB NVMe SSD"
-      },
-      "publishDate": "2024-03-17",
-      "author": "Tech Review Team"
-    },
-    {
-      "_id": "5",
-      "title": "Razer Blade 18",
-      "slug": "razer-blade-18",
-      "description": "Premium gaming laptop with desktop-class performance.",
-      "price": 2499,
-      "rating": 4.6,
-      "reviewCount": 98,
-      "imageUrl": "/images/placeholder.jpg",
-      "category": "Gaming",
-      "pageLink": "/post/5",
-      "content": "The Razer Blade 18 delivers unprecedented gaming performance...",
-      "specs": {
-        "processor": "Intel Core i9-14900HX",
-        "gpu": "NVIDIA RTX 4090",
-        "memory": "32GB DDR5",
-        "display": "18-inch QHD+ 240Hz"
-      },
-      "publishDate": "2024-03-16",
-      "author": "Tech Review Team"
-    },
-    {
-      "_id": "6",
-      "title": "MacBook Pro 14 M3 Max",
-      "slug": "macbook-pro-14-m3-max",
-      "description": "The most powerful MacBook Pro with M3 Max chip and stunning display.",
-      "price": 2499,
-      "rating": 4.9,
-      "reviewCount": 178,
-      "imageUrl": "/images/placeholder.jpg",
       "category": "Laptops",
-      "pageLink": "/post/6",
-      "content": "Apple's latest MacBook Pro pushes the boundaries of laptop performance...",
-      "specs": {
-        "processor": "Apple M3 Max",
-        "memory": "32GB Unified Memory",
-        "storage": "1TB SSD",
-        "display": "14.2-inch Liquid Retina XDR",
-        "battery": "Up to 22 hours"
-      },
-      "publishDate": "2024-03-15",
-      "author": "Tech Review Team"
+      "tags": [
+        "laptops",
+        "samsung",
+        "tech",
+        "review"
+      ],
+      "metaTitle": "Samsung Laptops Pro 2025 Review - TechReviews.AI",
+      "metaDescription": "Comprehensive review of the Samsung Laptops Pro 2025. Find out if this laptops device is worth your investment.",
+      "keywords": [
+        "laptops",
+        "samsung",
+        "review",
+        "tech"
+      ],
+      "author": "Tech Editor",
+      "publishDate": "2025-03-08T04:42:18.558Z",
+      "lastUpdated": "2025-03-09T04:42:18.558Z",
+      "status": "published"
     },
     {
-      "_id": "7",
-      "title": "Dell XPS 13 Plus",
-      "slug": "dell-xps-13-plus",
-      "description": "Ultra-portable laptop with innovative design and OLED display.",
-      "price": 1499,
-      "rating": 4.7,
-      "reviewCount": 145,
+      "_id": "product_1741495338559_2",
+      "title": "Sony Smartphones Pro 2026",
+      "slug": "sony-smartphones-pro-2026",
+      "description": "Experience the next level of smartphones with the Sony Smartphones Pro 2026. This premium device offers exceptional performance and innovative features.",
+      "content": "Detailed review of the Sony Smartphones Pro 2026. This product represents the pinnacle of smartphones technology.",
+      "price": 699.99,
+      "rating": 4.964508492395286,
+      "reviewCount": 59,
       "imageUrl": "/images/placeholder.jpg",
-      "category": "Laptops",
-      "pageLink": "/post/7",
-      "content": "Dell's XPS 13 Plus represents the future of ultrabook design...",
-      "specs": {
-        "processor": "Intel Core i7-13700H",
-        "memory": "16GB LPDDR5",
-        "storage": "512GB NVMe SSD",
-        "display": "13.4-inch 3.5K OLED",
-        "battery": "Up to 12 hours"
+      "gallery": [
+        "/images/placeholder.jpg"
+      ],
+      "pageLink": "/product/sony-smartphones-pro-2026",
+      "pros": [
+        "Premium build quality",
+        "Great value for money",
+        "Advanced features"
+      ],
+      "cons": [
+        "Premium price point",
+        "Limited availability"
+      ],
+      "specifications": {
+        "brand": "Sony",
+        "model": "Pro 2026",
+        "warranty": "1 year"
       },
-      "publishDate": "2024-03-14",
-      "author": "Tech Review Team"
-    },
-    {
-      "_id": "8",
-      "title": "Lenovo ThinkPad X1 Carbon Gen 11",
-      "slug": "thinkpad-x1-carbon-gen-11",
-      "description": "Business laptop with legendary ThinkPad reliability and features.",
-      "price": 1799,
-      "rating": 4.8,
-      "reviewCount": 167,
-      "imageUrl": "/images/placeholder.jpg",
-      "category": "Laptops",
-      "pageLink": "/post/8",
-      "content": "The ThinkPad X1 Carbon continues its legacy of excellence...",
-      "specs": {
-        "processor": "Intel Core i7-1355U",
-        "memory": "16GB LPDDR5",
-        "storage": "1TB PCIe SSD",
-        "display": "14-inch 2.8K OLED",
-        "battery": "Up to 15 hours"
+      "affiliateLinks": {
+        "amazon": "https://amazon.com/dp/a2bukc"
       },
-      "publishDate": "2024-03-13",
-      "author": "Tech Review Team"
-    },
-    {
-      "_id": "9",
-      "title": "HP Spectre x360 14",
-      "slug": "hp-spectre-x360-14",
-      "description": "Premium 2-in-1 laptop with stunning OLED display and pen support.",
-      "price": 1649,
-      "rating": 4.7,
-      "reviewCount": 134,
-      "imageUrl": "/images/placeholder.jpg",
-      "category": "Laptops",
-      "pageLink": "/post/9",
-      "content": "HP's flagship convertible laptop combines style with substance...",
-      "specs": {
-        "processor": "Intel Core i7-13700H",
-        "memory": "16GB DDR5",
-        "storage": "1TB NVMe SSD",
-        "display": "14-inch 3K OLED",
-        "battery": "Up to 13 hours"
-      },
-      "publishDate": "2024-03-12",
-      "author": "Tech Review Team"
-    },
-    {
-      "_id": "10",
-      "title": "ASUS ROG Zephyrus G14",
-      "slug": "asus-rog-zephyrus-g14",
-      "description": "Compact gaming laptop with powerful AMD hardware and mini-LED display.",
-      "price": 1899,
-      "rating": 4.8,
-      "reviewCount": 156,
-      "imageUrl": "/images/placeholder.jpg",
-      "category": "Laptops",
-      "pageLink": "/post/10",
-      "content": "The ROG Zephyrus G14 redefines what's possible in a compact gaming laptop...",
-      "specs": {
-        "processor": "AMD Ryzen 9 7940HS",
-        "gpu": "NVIDIA RTX 4070",
-        "memory": "16GB DDR5",
-        "display": "14-inch Mini-LED QHD+ 165Hz",
-        "battery": "Up to 10 hours"
-      },
-      "publishDate": "2024-03-11",
-      "author": "Tech Review Team"
-    },
-    {
-      "_id": "11",
-      "title": "iPhone 15 Pro Max",
-      "slug": "iphone-15-pro-max",
-      "description": "Apple's flagship smartphone with A17 Pro chip and titanium design.",
-      "price": 1199,
-      "rating": 4.9,
-      "reviewCount": 289,
-      "imageUrl": "/images/placeholder.jpg",
       "category": "Smartphones",
-      "pageLink": "/post/11",
-      "content": "The iPhone 15 Pro Max represents Apple's most advanced smartphone...",
-      "specs": {
-        "processor": "A17 Pro",
-        "display": "6.7-inch Super Retina XDR OLED",
-        "camera": "48MP Main + 12MP Ultra Wide + 12MP Telephoto",
-        "memory": "8GB RAM",
-        "storage": "256GB"
-      },
-      "publishDate": "2024-03-10",
-      "author": "Tech Review Team"
+      "tags": [
+        "smartphones",
+        "sony",
+        "tech",
+        "review"
+      ],
+      "metaTitle": "Sony Smartphones Pro 2026 Review - TechReviews.AI",
+      "metaDescription": "Comprehensive review of the Sony Smartphones Pro 2026. Find out if this smartphones device is worth your investment.",
+      "keywords": [
+        "smartphones",
+        "sony",
+        "review",
+        "tech"
+      ],
+      "author": "Tech Editor",
+      "publishDate": "2025-03-07T04:42:18.559Z",
+      "lastUpdated": "2025-03-09T04:42:18.559Z",
+      "status": "published"
     },
     {
-      "_id": "12",
-      "title": "Samsung Galaxy S24 Ultra",
-      "slug": "samsung-galaxy-s24-ultra",
-      "description": "Ultimate Android flagship with S Pen and AI features.",
-      "price": 1299,
-      "rating": 4.8,
-      "reviewCount": 245,
+      "_id": "product_1741495338560_3",
+      "title": "Microsoft Smart Home Pro 2024",
+      "slug": "microsoft-smart-home-pro-2024",
+      "description": "Experience the next level of smart home with the Microsoft Smart Home Pro 2024. This premium device offers exceptional performance and innovative features.",
+      "content": "Detailed review of the Microsoft Smart Home Pro 2024. This product represents the pinnacle of smart home technology.",
+      "price": 799.99,
+      "rating": 4.726073369185646,
+      "reviewCount": 93,
       "imageUrl": "/images/placeholder.jpg",
-      "category": "Smartphones",
-      "pageLink": "/post/12",
-      "content": "Samsung's Galaxy S24 Ultra brings AI-powered features to mobile...",
-      "specs": {
-        "processor": "Snapdragon 8 Gen 3",
-        "display": "6.8-inch QHD+ AMOLED 120Hz",
-        "camera": "200MP Main + 12MP Ultra Wide + 50MP Telephoto",
-        "memory": "12GB RAM",
-        "storage": "256GB"
+      "gallery": [
+        "/images/placeholder.jpg"
+      ],
+      "pageLink": "/product/microsoft-smart-home-pro-2024",
+      "pros": [
+        "Great value for money",
+        "Advanced features",
+        "User friendly interface"
+      ],
+      "cons": [
+        "Premium price point",
+        "Limited availability"
+      ],
+      "specifications": {
+        "brand": "Microsoft",
+        "model": "Pro 2024",
+        "warranty": "1 year"
       },
-      "publishDate": "2024-03-09",
-      "author": "Tech Review Team"
-    },
-    {
-      "_id": "13",
-      "title": "Google Pixel 8 Pro",
-      "slug": "google-pixel-8-pro",
-      "description": "Google's AI-powered flagship with exceptional camera capabilities.",
-      "price": 999,
-      "rating": 4.8,
-      "reviewCount": 198,
-      "imageUrl": "/images/placeholder.jpg",
-      "category": "Smartphones",
-      "pageLink": "/post/13",
-      "content": "The Pixel 8 Pro showcases Google's latest AI and camera innovations...",
-      "specs": {
-        "processor": "Google Tensor G3",
-        "display": "6.7-inch LTPO OLED 120Hz",
-        "camera": "50MP Main + 48MP Ultra Wide + 48MP Telephoto",
-        "memory": "12GB RAM",
-        "storage": "128GB"
+      "affiliateLinks": {
+        "amazon": "https://amazon.com/dp/hf9zx"
       },
-      "publishDate": "2024-03-08",
-      "author": "Tech Review Team"
-    },
-    {
-      "_id": "14",
-      "title": "Amazon Echo Show 15",
-      "slug": "amazon-echo-show-15",
-      "description": "15.6-inch smart display with Alexa for family organization.",
-      "price": 279,
-      "rating": 4.7,
-      "reviewCount": 167,
-      "imageUrl": "/images/placeholder.jpg",
       "category": "Smart Home",
-      "pageLink": "/post/14",
-      "content": "The Echo Show 15 transforms your wall into a smart command center...",
-      "specs": {
-        "display": "15.6-inch 1080p touch screen",
-        "processor": "Amazon AZ2 Neural Edge",
-        "camera": "5MP",
-        "speakers": "Stereo speakers",
-        "connectivity": "Dual-band Wi-Fi, Bluetooth"
-      },
-      "publishDate": "2024-03-07",
-      "author": "Tech Review Team"
+      "tags": [
+        "smart home",
+        "microsoft",
+        "tech",
+        "review"
+      ],
+      "metaTitle": "Microsoft Smart Home Pro 2024 Review - TechReviews.AI",
+      "metaDescription": "Comprehensive review of the Microsoft Smart Home Pro 2024. Find out if this smart home device is worth your investment.",
+      "keywords": [
+        "smart home",
+        "microsoft",
+        "review",
+        "tech"
+      ],
+      "author": "Tech Editor",
+      "publishDate": "2025-03-06T04:42:18.560Z",
+      "lastUpdated": "2025-03-09T04:42:18.560Z",
+      "status": "published",
+      "discount": 10
     },
     {
-      "_id": "15",
-      "title": "Google Nest Hub Max",
-      "slug": "google-nest-hub-max",
-      "description": "10-inch smart display with Google Assistant and camera.",
-      "price": 229,
-      "rating": 4.6,
-      "reviewCount": 145,
+      "_id": "product_1741495338561_4",
+      "title": "Google Gaming Pro 2025",
+      "slug": "google-gaming-pro-2025",
+      "description": "Experience the next level of gaming with the Google Gaming Pro 2025. This premium device offers exceptional performance and innovative features.",
+      "content": "Detailed review of the Google Gaming Pro 2025. This product represents the pinnacle of gaming technology.",
+      "price": 899.99,
+      "rating": 4.080377460790738,
+      "reviewCount": 136,
       "imageUrl": "/images/placeholder.jpg",
-      "category": "Smart Home",
-      "pageLink": "/post/15",
-      "content": "Google's Nest Hub Max is the perfect kitchen companion...",
-      "specs": {
-        "display": "10-inch HD touch screen",
-        "camera": "6.5MP with Face Match",
-        "speakers": "Stereo speakers + woofer",
-        "connectivity": "Wi-Fi, Bluetooth",
-        "features": "Gesture control"
+      "gallery": [
+        "/images/placeholder.jpg"
+      ],
+      "pageLink": "/product/google-gaming-pro-2025",
+      "pros": [
+        "Advanced features",
+        "User friendly interface",
+        "Innovative design"
+      ],
+      "cons": [
+        "Premium price point",
+        "Limited availability"
+      ],
+      "specifications": {
+        "brand": "Google",
+        "model": "Pro 2025",
+        "warranty": "1 year"
       },
-      "publishDate": "2024-03-06",
-      "author": "Tech Review Team"
-    },
-    {
-      "_id": "16",
-      "title": "Philips Hue Starter Kit",
-      "slug": "philips-hue-starter-kit",
-      "description": "Smart lighting system with bridge and color bulbs.",
-      "price": 199,
-      "rating": 4.8,
-      "reviewCount": 234,
-      "imageUrl": "/images/placeholder.jpg",
-      "category": "Smart Home",
-      "pageLink": "/post/16",
-      "content": "Transform your home lighting with Philips Hue's smart ecosystem...",
-      "specs": {
-        "bulbs": "4x Color E26 LED",
-        "bridge": "Hue Bridge v2",
-        "compatibility": "Alexa, Google Assistant, HomeKit",
-        "connection": "Zigbee",
-        "lifespan": "25,000 hours"
+      "affiliateLinks": {
+        "amazon": "https://amazon.com/dp/r9ox24"
       },
-      "publishDate": "2024-03-05",
-      "author": "Tech Review Team"
-    },
-    {
-      "_id": "17",
-      "title": "Samsung Odyssey G9",
-      "slug": "samsung-odyssey-g9",
-      "description": "49-inch ultra-wide curved gaming monitor with Mini-LED technology.",
-      "price": 1599,
-      "rating": 4.8,
-      "reviewCount": 156,
-      "imageUrl": "/images/placeholder.jpg",
       "category": "Gaming",
-      "pageLink": "/post/17",
-      "content": "The Samsung Odyssey G9 delivers an immersive gaming experience...",
-      "specs": {
-        "display": "49-inch Mini-LED",
-        "resolution": "5120 x 1440",
-        "refresh_rate": "240Hz",
-        "response_time": "1ms",
-        "hdr": "HDR2000"
-      },
-      "publishDate": "2024-03-04",
-      "author": "Tech Review Team"
+      "tags": [
+        "gaming",
+        "google",
+        "tech",
+        "review"
+      ],
+      "metaTitle": "Google Gaming Pro 2025 Review - TechReviews.AI",
+      "metaDescription": "Comprehensive review of the Google Gaming Pro 2025. Find out if this gaming device is worth your investment.",
+      "keywords": [
+        "gaming",
+        "google",
+        "review",
+        "tech"
+      ],
+      "author": "Tech Editor",
+      "publishDate": "2025-03-05T04:42:18.561Z",
+      "lastUpdated": "2025-03-09T04:42:18.561Z",
+      "status": "published"
     },
     {
-      "_id": "18",
-      "title": "Razer BlackShark V2 Pro",
-      "slug": "razer-blackshark-v2-pro",
-      "description": "Premium wireless gaming headset with THX Spatial Audio.",
-      "price": 199,
-      "rating": 4.7,
-      "reviewCount": 189,
+      "_id": "product_1741495338562_5",
+      "title": "Asus Laptops Pro 2026",
+      "slug": "asus-laptops-pro-2026",
+      "description": "Experience the next level of laptops with the Asus Laptops Pro 2026. This premium device offers exceptional performance and innovative features.",
+      "content": "Detailed review of the Asus Laptops Pro 2026. This product represents the pinnacle of laptops technology.",
+      "price": 999.99,
+      "rating": 4.000935999326984,
+      "reviewCount": 111,
       "imageUrl": "/images/placeholder.jpg",
-      "category": "Gaming",
-      "pageLink": "/post/18",
-      "content": "Experience immersive gaming audio with the BlackShark V2 Pro...",
-      "specs": {
-        "driver": "50mm Triforce Titanium",
-        "frequency": "12Hz-28kHz",
-        "battery": "Up to 24 hours",
-        "connectivity": "2.4GHz Wireless",
-        "weight": "320g"
+      "gallery": [
+        "/images/placeholder.jpg"
+      ],
+      "pageLink": "/product/asus-laptops-pro-2026",
+      "pros": [
+        "User friendly interface",
+        "Innovative design",
+        "Excellent connectivity"
+      ],
+      "cons": [
+        "Premium price point",
+        "Limited availability"
+      ],
+      "specifications": {
+        "brand": "Asus",
+        "model": "Pro 2026",
+        "warranty": "1 year"
       },
-      "publishDate": "2024-03-03",
-      "author": "Tech Review Team"
-    },
-    {
-      "_id": "19",
-      "title": "Logitech G Pro X Superlight",
-      "slug": "logitech-g-pro-x-superlight",
-      "description": "Ultra-lightweight wireless gaming mouse for competitive gaming.",
-      "price": 159,
-      "rating": 4.9,
-      "reviewCount": 278,
-      "imageUrl": "/images/placeholder.jpg",
-      "category": "Gaming",
-      "pageLink": "/post/19",
-      "content": "The G Pro X Superlight is the ultimate competitive gaming mouse...",
-      "specs": {
-        "sensor": "HERO 25K",
-        "weight": "63g",
-        "battery": "Up to 70 hours",
-        "switches": "Omron 20M",
-        "dpi": "25,600"
+      "affiliateLinks": {
+        "amazon": "https://amazon.com/dp/g89plj"
       },
-      "publishDate": "2024-03-02",
-      "author": "Tech Review Team"
-    },
-    {
-      "_id": "20",
-      "title": "Secretlab Titan Evo 2022",
-      "slug": "secretlab-titan-evo-2022",
-      "description": "Premium gaming chair with advanced ergonomic features.",
-      "price": 549,
-      "rating": 4.8,
-      "reviewCount": 345,
-      "imageUrl": "/images/placeholder.jpg",
-      "category": "Gaming",
-      "pageLink": "/post/20",
-      "content": "The Titan Evo 2022 sets new standards for gaming comfort...",
-      "specs": {
-        "material": "NEO Hybrid Leatherette",
-        "recline": "165 degrees",
-        "armrests": "4D",
-        "weight_capacity": "290lbs",
-        "warranty": "5 years"
-      },
-      "publishDate": "2024-03-01",
-      "author": "Tech Review Team"
-    },
-    {
-      "_id": "21",
-      "title": "Acer Chromebook Spin 714",
-      "slug": "acer-chromebook-spin-714",
-      "description": "Premium Chromebook with 2-in-1 design and stylus support.",
-      "price": 699,
-      "rating": 4.6,
-      "reviewCount": 123,
-      "imageUrl": "/images/placeholder.jpg",
       "category": "Laptops",
-      "pageLink": "/post/21",
-      "content": "The Chromebook Spin 714 offers premium features at a reasonable price...",
-      "specs": {
-        "processor": "Intel Core i5-1335U",
-        "memory": "8GB LPDDR4X",
-        "storage": "256GB SSD",
-        "display": "14-inch 2.2K IPS Touch",
-        "battery": "Up to 10 hours"
-      },
-      "publishDate": "2024-02-28",
-      "author": "Tech Review Team"
+      "tags": [
+        "laptops",
+        "asus",
+        "tech",
+        "review"
+      ],
+      "metaTitle": "Asus Laptops Pro 2026 Review - TechReviews.AI",
+      "metaDescription": "Comprehensive review of the Asus Laptops Pro 2026. Find out if this laptops device is worth your investment.",
+      "keywords": [
+        "laptops",
+        "asus",
+        "review",
+        "tech"
+      ],
+      "author": "Tech Editor",
+      "publishDate": "2025-03-04T04:42:18.562Z",
+      "lastUpdated": "2025-03-09T04:42:18.562Z",
+      "status": "published"
     },
     {
-      "_id": "22",
-      "title": "Microsoft Surface Laptop Studio 2",
-      "slug": "surface-laptop-studio-2",
-      "description": "Versatile creative laptop with unique hinge design.",
-      "price": 1999,
-      "rating": 4.7,
-      "reviewCount": 167,
+      "_id": "product_1741495338563_6",
+      "title": "Lenovo Smartphones Pro 2024",
+      "slug": "lenovo-smartphones-pro-2024",
+      "description": "Experience the next level of smartphones with the Lenovo Smartphones Pro 2024. This premium device offers exceptional performance and innovative features.",
+      "content": "Detailed review of the Lenovo Smartphones Pro 2024. This product represents the pinnacle of smartphones technology.",
+      "price": 1099.99,
+      "rating": 4.430632108776269,
+      "reviewCount": 131,
       "imageUrl": "/images/placeholder.jpg",
-      "category": "Laptops",
-      "pageLink": "/post/22",
-      "content": "The Surface Laptop Studio 2 redefines mobile creativity...",
-      "specs": {
-        "processor": "Intel Core i7-13700H",
-        "gpu": "NVIDIA RTX 4060",
-        "memory": "32GB LPDDR5x",
-        "display": "14.4-inch 120Hz Touch",
-        "storage": "1TB SSD"
+      "gallery": [
+        "/images/placeholder.jpg"
+      ],
+      "pageLink": "/product/lenovo-smartphones-pro-2024",
+      "pros": [
+        "Innovative design",
+        "Excellent connectivity",
+        "High performance"
+      ],
+      "cons": [
+        "Premium price point",
+        "Limited availability"
+      ],
+      "specifications": {
+        "brand": "Lenovo",
+        "model": "Pro 2024",
+        "warranty": "1 year"
       },
-      "publishDate": "2024-02-27",
-      "author": "Tech Review Team"
-    },
-    {
-      "_id": "23",
-      "title": "Framework Laptop 16",
-      "slug": "framework-laptop-16",
-      "description": "Modular, upgradeable laptop with DIY-friendly design.",
-      "price": 1399,
-      "rating": 4.8,
-      "reviewCount": 145,
-      "imageUrl": "/images/placeholder.jpg",
-      "category": "Laptops",
-      "pageLink": "/post/23",
-      "content": "The Framework Laptop 16 brings modularity to high-performance computing...",
-      "specs": {
-        "processor": "AMD Ryzen 7 7840HS",
-        "gpu": "RX 7700S",
-        "memory": "32GB DDR5",
-        "display": "16-inch 2560x1600",
-        "storage": "1TB NVMe SSD"
+      "affiliateLinks": {
+        "amazon": "https://amazon.com/dp/6o426"
       },
-      "publishDate": "2024-02-26",
-      "author": "Tech Review Team"
-    },
-    {
-      "_id": "24",
-      "title": "OnePlus 12",
-      "slug": "oneplus-12",
-      "description": "Flagship killer with Hasselblad cameras and fast charging.",
-      "price": 899,
-      "rating": 4.7,
-      "reviewCount": 178,
-      "imageUrl": "/images/placeholder.jpg",
       "category": "Smartphones",
-      "pageLink": "/post/24",
-      "content": "The OnePlus 12 continues the tradition of flagship performance...",
-      "specs": {
-        "processor": "Snapdragon 8 Gen 3",
-        "display": "6.82-inch LTPO AMOLED 120Hz",
-        "camera": "50MP Main + 48MP Ultra + 64MP Tele",
-        "memory": "12GB RAM",
-        "storage": "256GB"
-      },
-      "publishDate": "2024-02-25",
-      "author": "Tech Review Team"
+      "tags": [
+        "smartphones",
+        "lenovo",
+        "tech",
+        "review"
+      ],
+      "metaTitle": "Lenovo Smartphones Pro 2024 Review - TechReviews.AI",
+      "metaDescription": "Comprehensive review of the Lenovo Smartphones Pro 2024. Find out if this smartphones device is worth your investment.",
+      "keywords": [
+        "smartphones",
+        "lenovo",
+        "review",
+        "tech"
+      ],
+      "author": "Tech Editor",
+      "publishDate": "2025-03-03T04:42:18.563Z",
+      "lastUpdated": "2025-03-09T04:42:18.563Z",
+      "status": "published",
+      "discount": 10
     },
     {
-      "_id": "25",
-      "title": "Nothing Phone (2)",
-      "slug": "nothing-phone-2",
-      "description": "Unique smartphone with Glyph interface and clean design.",
-      "price": 699,
-      "rating": 4.6,
-      "reviewCount": 156,
+      "_id": "product_1741495338564_7",
+      "title": "Dell Smart Home Pro 2025",
+      "slug": "dell-smart-home-pro-2025",
+      "description": "Experience the next level of smart home with the Dell Smart Home Pro 2025. This premium device offers exceptional performance and innovative features.",
+      "content": "Detailed review of the Dell Smart Home Pro 2025. This product represents the pinnacle of smart home technology.",
+      "price": 1199.99,
+      "rating": 4.0531438638259605,
+      "reviewCount": 182,
       "imageUrl": "/images/placeholder.jpg",
-      "category": "Smartphones",
-      "pageLink": "/post/25",
-      "content": "The Nothing Phone (2) brings innovation to smartphone design...",
-      "specs": {
-        "processor": "Snapdragon 8+ Gen 1",
-        "display": "6.7-inch OLED 120Hz",
-        "camera": "50MP Main + 50MP Ultra Wide",
-        "memory": "12GB RAM",
-        "storage": "256GB"
+      "gallery": [
+        "/images/placeholder.jpg"
+      ],
+      "pageLink": "/product/dell-smart-home-pro-2025",
+      "pros": [
+        "Excellent connectivity",
+        "High performance",
+        "Long battery life"
+      ],
+      "cons": [
+        "Premium price point",
+        "Limited availability"
+      ],
+      "specifications": {
+        "brand": "Dell",
+        "model": "Pro 2025",
+        "warranty": "1 year"
       },
-      "publishDate": "2024-02-24",
-      "author": "Tech Review Team"
-    },
-    {
-      "_id": "26",
-      "title": "ASUS ROG Phone 8 Pro",
-      "slug": "asus-rog-phone-8-pro",
-      "description": "Ultimate gaming smartphone with advanced cooling.",
-      "price": 1199,
-      "rating": 4.8,
-      "reviewCount": 134,
-      "imageUrl": "/images/placeholder.jpg",
-      "category": "Smartphones",
-      "pageLink": "/post/26",
-      "content": "The ROG Phone 8 Pro sets new standards for mobile gaming...",
-      "specs": {
-        "processor": "Snapdragon 8 Gen 3",
-        "display": "6.78-inch AMOLED 165Hz",
-        "camera": "50MP Main + 13MP Ultra + 32MP Tele",
-        "memory": "16GB RAM",
-        "storage": "512GB"
+      "affiliateLinks": {
+        "amazon": "https://amazon.com/dp/knr6xe"
       },
-      "publishDate": "2024-02-23",
-      "author": "Tech Review Team"
-    },
-    {
-      "_id": "27",
-      "title": "Nest Learning Thermostat",
-      "slug": "nest-learning-thermostat",
-      "description": "Smart thermostat that learns your preferences.",
-      "price": 249,
-      "rating": 4.7,
-      "reviewCount": 289,
-      "imageUrl": "/images/placeholder.jpg",
       "category": "Smart Home",
-      "pageLink": "/post/27",
-      "content": "The Nest Learning Thermostat helps you save energy automatically...",
-      "specs": {
-        "display": "2.08-inch LCD",
-        "sensors": "Temperature, Humidity, Occupancy",
-        "connectivity": "Wi-Fi, Bluetooth",
-        "compatibility": "Most HVAC systems",
-        "power": "24V or Battery"
-      },
-      "publishDate": "2024-02-22",
-      "author": "Tech Review Team"
+      "tags": [
+        "smart home",
+        "dell",
+        "tech",
+        "review"
+      ],
+      "metaTitle": "Dell Smart Home Pro 2025 Review - TechReviews.AI",
+      "metaDescription": "Comprehensive review of the Dell Smart Home Pro 2025. Find out if this smart home device is worth your investment.",
+      "keywords": [
+        "smart home",
+        "dell",
+        "review",
+        "tech"
+      ],
+      "author": "Tech Editor",
+      "publishDate": "2025-03-02T04:42:18.564Z",
+      "lastUpdated": "2025-03-09T04:42:18.564Z",
+      "status": "published"
     },
     {
-      "_id": "28",
-      "title": "Ring Video Doorbell Pro 2",
-      "slug": "ring-video-doorbell-pro-2",
-      "description": "Advanced video doorbell with 3D motion detection.",
-      "price": 249,
-      "rating": 4.6,
-      "reviewCount": 234,
+      "_id": "product_1741495338565_8",
+      "title": "Apple Gaming Pro 2026",
+      "slug": "apple-gaming-pro-2026",
+      "description": "Experience the next level of gaming with the Apple Gaming Pro 2026. This premium device offers exceptional performance and innovative features.",
+      "content": "Detailed review of the Apple Gaming Pro 2026. This product represents the pinnacle of gaming technology.",
+      "price": 1299.99,
+      "rating": 4.578400370133805,
+      "reviewCount": 157,
       "imageUrl": "/images/placeholder.jpg",
-      "category": "Smart Home",
-      "pageLink": "/post/28",
-      "content": "The Ring Video Doorbell Pro 2 offers enhanced security features...",
-      "specs": {
-        "resolution": "1536p HD",
-        "field_of_view": "150° horizontal, 150° vertical",
-        "features": "3D Motion Detection, Bird's Eye View",
-        "power": "Hardwired",
-        "connectivity": "2.4GHz + 5GHz Wi-Fi"
+      "gallery": [
+        "/images/placeholder.jpg"
+      ],
+      "pageLink": "/product/apple-gaming-pro-2026",
+      "pros": [
+        "High performance",
+        "Long battery life",
+        "Premium build quality"
+      ],
+      "cons": [
+        "Premium price point",
+        "Limited availability"
+      ],
+      "specifications": {
+        "brand": "Apple",
+        "model": "Pro 2026",
+        "warranty": "1 year"
       },
-      "publishDate": "2024-02-21",
-      "author": "Tech Review Team"
-    },
-    {
-      "_id": "29",
-      "title": "Roborock S8 Pro Ultra",
-      "slug": "roborock-s8-pro-ultra",
-      "description": "Advanced robot vacuum with self-emptying and mopping.",
-      "price": 1599,
-      "rating": 4.8,
-      "reviewCount": 167,
-      "imageUrl": "/images/placeholder.jpg",
-      "category": "Smart Home",
-      "pageLink": "/post/29",
-      "content": "The Roborock S8 Pro Ultra is the ultimate in automated cleaning...",
-      "specs": {
-        "suction": "6000Pa",
-        "battery": "5200mAh",
-        "mapping": "LiDAR + 3D scanning",
-        "dustbin": "2.5L auto-empty",
-        "water_tank": "200ml + auto refill"
+      "affiliateLinks": {
+        "amazon": "https://amazon.com/dp/uu5h0k"
       },
-      "publishDate": "2024-02-20",
-      "author": "Tech Review Team"
-    },
-    {
-      "_id": "30",
-      "title": "ASUS ROG Swift PG32UQX",
-      "slug": "asus-rog-swift-pg32uqx",
-      "description": "Premium 32-inch Mini LED gaming monitor with 4K resolution.",
-      "price": 2999,
-      "rating": 4.8,
-      "reviewCount": 145,
-      "imageUrl": "/images/placeholder.jpg",
       "category": "Gaming",
-      "pageLink": "/post/30",
-      "content": "The ROG Swift PG32UQX represents the pinnacle of gaming monitor technology...",
-      "specs": {
-        "display": "32-inch Mini LED",
-        "resolution": "4K (3840 x 2160)",
-        "refresh_rate": "144Hz",
-        "hdr": "HDR 1400",
-        "response_time": "1ms"
-      },
-      "publishDate": "2024-02-19",
-      "author": "Tech Review Team"
+      "tags": [
+        "gaming",
+        "apple",
+        "tech",
+        "review"
+      ],
+      "metaTitle": "Apple Gaming Pro 2026 Review - TechReviews.AI",
+      "metaDescription": "Comprehensive review of the Apple Gaming Pro 2026. Find out if this gaming device is worth your investment.",
+      "keywords": [
+        "gaming",
+        "apple",
+        "review",
+        "tech"
+      ],
+      "author": "Tech Editor",
+      "publishDate": "2025-03-01T04:42:18.565Z",
+      "lastUpdated": "2025-03-09T04:42:18.565Z",
+      "status": "published"
     },
     {
-      "_id": "31",
-      "title": "Lenovo Legion Pro 7i",
-      "slug": "lenovo-legion-pro-7i",
-      "description": "High-performance gaming laptop with advanced cooling system.",
-      "price": 2299,
-      "rating": 4.7,
-      "reviewCount": 167,
+      "_id": "product_1741495338566_9",
+      "title": "Samsung Laptops Pro 2024",
+      "slug": "samsung-laptops-pro-2024",
+      "description": "Experience the next level of laptops with the Samsung Laptops Pro 2024. This premium device offers exceptional performance and innovative features.",
+      "content": "Detailed review of the Samsung Laptops Pro 2024. This product represents the pinnacle of laptops technology.",
+      "price": 1399.99,
+      "rating": 4.9165251400065095,
+      "reviewCount": 62,
       "imageUrl": "/images/placeholder.jpg",
+      "gallery": [
+        "/images/placeholder.jpg"
+      ],
+      "pageLink": "/product/samsung-laptops-pro-2024",
+      "pros": [
+        "Long battery life",
+        "Premium build quality",
+        "Great value for money"
+      ],
+      "cons": [
+        "Premium price point",
+        "Limited availability"
+      ],
+      "specifications": {
+        "brand": "Samsung",
+        "model": "Pro 2024",
+        "warranty": "1 year"
+      },
+      "affiliateLinks": {
+        "amazon": "https://amazon.com/dp/lqkaxu"
+      },
       "category": "Laptops",
-      "pageLink": "/post/31",
-      "content": "The Legion Pro 7i delivers exceptional gaming performance in a refined package...",
-      "specs": {
-        "processor": "Intel Core i9-14900HX",
-        "gpu": "NVIDIA RTX 4090",
-        "memory": "32GB DDR5",
-        "storage": "2TB NVMe SSD",
-        "display": "16-inch Mini LED"
-      },
-      "publishDate": "2024-02-18",
-      "author": "Tech Review Team"
+      "tags": [
+        "laptops",
+        "samsung",
+        "tech",
+        "review"
+      ],
+      "metaTitle": "Samsung Laptops Pro 2024 Review - TechReviews.AI",
+      "metaDescription": "Comprehensive review of the Samsung Laptops Pro 2024. Find out if this laptops device is worth your investment.",
+      "keywords": [
+        "laptops",
+        "samsung",
+        "review",
+        "tech"
+      ],
+      "author": "Tech Editor",
+      "publishDate": "2025-02-28T04:42:18.566Z",
+      "lastUpdated": "2025-03-09T04:42:18.566Z",
+      "status": "published",
+      "discount": 10
     },
     {
-      "_id": "32",
-      "title": "Sony Xperia 1 V",
-      "slug": "sony-xperia-1-v",
-      "description": "Professional-grade camera smartphone with 4K display.",
-      "price": 1399,
-      "rating": 4.6,
-      "reviewCount": 134,
+      "_id": "product_1741495338566_10",
+      "title": "Sony Smartphones Pro 2025",
+      "slug": "sony-smartphones-pro-2025",
+      "description": "Experience the next level of smartphones with the Sony Smartphones Pro 2025. This premium device offers exceptional performance and innovative features.",
+      "content": "Detailed review of the Sony Smartphones Pro 2025. This product represents the pinnacle of smartphones technology.",
+      "price": 1499.99,
+      "rating": 4.195367959281436,
+      "reviewCount": 144,
       "imageUrl": "/images/placeholder.jpg",
+      "gallery": [
+        "/images/placeholder.jpg"
+      ],
+      "pageLink": "/product/sony-smartphones-pro-2025",
+      "pros": [
+        "Premium build quality",
+        "Great value for money",
+        "Advanced features"
+      ],
+      "cons": [
+        "Premium price point",
+        "Limited availability"
+      ],
+      "specifications": {
+        "brand": "Sony",
+        "model": "Pro 2025",
+        "warranty": "1 year"
+      },
+      "affiliateLinks": {
+        "amazon": "https://amazon.com/dp/kwi6ve"
+      },
       "category": "Smartphones",
-      "pageLink": "/post/32",
-      "content": "The Xperia 1 V combines professional camera features with flagship performance...",
-      "specs": {
-        "processor": "Snapdragon 8 Gen 2",
-        "display": "6.5-inch 4K OLED 120Hz",
-        "camera": "48MP Main + 12MP Ultra + 12MP Tele",
-        "memory": "12GB RAM",
-        "storage": "256GB"
-      },
-      "publishDate": "2024-02-17",
-      "author": "Tech Review Team"
+      "tags": [
+        "smartphones",
+        "sony",
+        "tech",
+        "review"
+      ],
+      "metaTitle": "Sony Smartphones Pro 2025 Review - TechReviews.AI",
+      "metaDescription": "Comprehensive review of the Sony Smartphones Pro 2025. Find out if this smartphones device is worth your investment.",
+      "keywords": [
+        "smartphones",
+        "sony",
+        "review",
+        "tech"
+      ],
+      "author": "Tech Editor",
+      "publishDate": "2025-02-27T04:42:18.566Z",
+      "lastUpdated": "2025-03-09T04:42:18.566Z",
+      "status": "published"
     },
     {
-      "_id": "33",
-      "title": "Ecobee Smart Thermostat Premium",
-      "slug": "ecobee-smart-thermostat-premium",
-      "description": "Advanced smart thermostat with built-in air quality monitoring.",
-      "price": 249,
-      "rating": 4.7,
-      "reviewCount": 178,
+      "_id": "product_1741495338567_11",
+      "title": "Microsoft Smart Home Pro 2026",
+      "slug": "microsoft-smart-home-pro-2026",
+      "description": "Experience the next level of smart home with the Microsoft Smart Home Pro 2026. This premium device offers exceptional performance and innovative features.",
+      "content": "Detailed review of the Microsoft Smart Home Pro 2026. This product represents the pinnacle of smart home technology.",
+      "price": 1599.99,
+      "rating": 4.15592128205774,
+      "reviewCount": 60,
       "imageUrl": "/images/placeholder.jpg",
+      "gallery": [
+        "/images/placeholder.jpg"
+      ],
+      "pageLink": "/product/microsoft-smart-home-pro-2026",
+      "pros": [
+        "Great value for money",
+        "Advanced features",
+        "User friendly interface"
+      ],
+      "cons": [
+        "Premium price point",
+        "Limited availability"
+      ],
+      "specifications": {
+        "brand": "Microsoft",
+        "model": "Pro 2026",
+        "warranty": "1 year"
+      },
+      "affiliateLinks": {
+        "amazon": "https://amazon.com/dp/nu2h4o"
+      },
       "category": "Smart Home",
-      "pageLink": "/post/33",
-      "content": "The Ecobee Smart Thermostat Premium offers comprehensive climate control...",
-      "specs": {
-        "display": "4-inch touchscreen",
-        "sensors": "Temperature, Humidity, CO2, VOC",
-        "compatibility": "Alexa, Google Assistant, HomeKit",
-        "features": "Smart Home/Away, Air Quality Monitor",
-        "connectivity": "Wi-Fi, Bluetooth"
-      },
-      "publishDate": "2024-02-16",
-      "author": "Tech Review Team"
+      "tags": [
+        "smart home",
+        "microsoft",
+        "tech",
+        "review"
+      ],
+      "metaTitle": "Microsoft Smart Home Pro 2026 Review - TechReviews.AI",
+      "metaDescription": "Comprehensive review of the Microsoft Smart Home Pro 2026. Find out if this smart home device is worth your investment.",
+      "keywords": [
+        "smart home",
+        "microsoft",
+        "review",
+        "tech"
+      ],
+      "author": "Tech Editor",
+      "publishDate": "2025-02-26T04:42:18.567Z",
+      "lastUpdated": "2025-03-09T04:42:18.567Z",
+      "status": "published"
     },
     {
-      "_id": "34",
-      "title": "Razer Huntsman V3 Pro",
-      "slug": "razer-huntsman-v3-pro",
-      "description": "Premium optical gaming keyboard with analog switches.",
-      "price": 249,
-      "rating": 4.8,
-      "reviewCount": 156,
+      "_id": "product_1741495338567_12",
+      "title": "Google Gaming Pro 2024",
+      "slug": "google-gaming-pro-2024",
+      "description": "Experience the next level of gaming with the Google Gaming Pro 2024. This premium device offers exceptional performance and innovative features.",
+      "content": "Detailed review of the Google Gaming Pro 2024. This product represents the pinnacle of gaming technology.",
+      "price": 1699.99,
+      "rating": 4.346821207631656,
+      "reviewCount": 93,
       "imageUrl": "/images/placeholder.jpg",
-      "category": "Gaming",
-      "pageLink": "/post/34",
-      "content": "The Huntsman V3 Pro sets new standards for gaming keyboard performance...",
-      "specs": {
-        "switches": "Razer Analog Optical",
-        "polling_rate": "8000Hz",
-        "features": "Per-key RGB, Media Controls",
-        "memory": "5 Profiles",
-        "connectivity": "USB-C, Wireless"
+      "gallery": [
+        "/images/placeholder.jpg"
+      ],
+      "pageLink": "/product/google-gaming-pro-2024",
+      "pros": [
+        "Advanced features",
+        "User friendly interface",
+        "Innovative design"
+      ],
+      "cons": [
+        "Premium price point",
+        "Limited availability"
+      ],
+      "specifications": {
+        "brand": "Google",
+        "model": "Pro 2024",
+        "warranty": "1 year"
       },
-      "publishDate": "2024-02-15",
-      "author": "Tech Review Team"
+      "affiliateLinks": {
+        "amazon": "https://amazon.com/dp/iw0lmv"
+      },
+      "category": "Gaming",
+      "tags": [
+        "gaming",
+        "google",
+        "tech",
+        "review"
+      ],
+      "metaTitle": "Google Gaming Pro 2024 Review - TechReviews.AI",
+      "metaDescription": "Comprehensive review of the Google Gaming Pro 2024. Find out if this gaming device is worth your investment.",
+      "keywords": [
+        "gaming",
+        "google",
+        "review",
+        "tech"
+      ],
+      "author": "Tech Editor",
+      "publishDate": "2025-02-25T04:42:18.567Z",
+      "lastUpdated": "2025-03-09T04:42:18.567Z",
+      "status": "published",
+      "discount": 10
+    },
+    {
+      "_id": "product_1741495338567_13",
+      "title": "Asus Laptops Pro 2025",
+      "slug": "asus-laptops-pro-2025",
+      "description": "Experience the next level of laptops with the Asus Laptops Pro 2025. This premium device offers exceptional performance and innovative features.",
+      "content": "Detailed review of the Asus Laptops Pro 2025. This product represents the pinnacle of laptops technology.",
+      "price": 1799.99,
+      "rating": 4.089307447717209,
+      "reviewCount": 84,
+      "imageUrl": "/images/placeholder.jpg",
+      "gallery": [
+        "/images/placeholder.jpg"
+      ],
+      "pageLink": "/product/asus-laptops-pro-2025",
+      "pros": [
+        "User friendly interface",
+        "Innovative design",
+        "Excellent connectivity"
+      ],
+      "cons": [
+        "Premium price point",
+        "Limited availability"
+      ],
+      "specifications": {
+        "brand": "Asus",
+        "model": "Pro 2025",
+        "warranty": "1 year"
+      },
+      "affiliateLinks": {
+        "amazon": "https://amazon.com/dp/ul9rro"
+      },
+      "category": "Laptops",
+      "tags": [
+        "laptops",
+        "asus",
+        "tech",
+        "review"
+      ],
+      "metaTitle": "Asus Laptops Pro 2025 Review - TechReviews.AI",
+      "metaDescription": "Comprehensive review of the Asus Laptops Pro 2025. Find out if this laptops device is worth your investment.",
+      "keywords": [
+        "laptops",
+        "asus",
+        "review",
+        "tech"
+      ],
+      "author": "Tech Editor",
+      "publishDate": "2025-02-24T04:42:18.567Z",
+      "lastUpdated": "2025-03-09T04:42:18.567Z",
+      "status": "published"
+    },
+    {
+      "_id": "product_1741495338568_14",
+      "title": "Lenovo Smartphones Pro 2026",
+      "slug": "lenovo-smartphones-pro-2026",
+      "description": "Experience the next level of smartphones with the Lenovo Smartphones Pro 2026. This premium device offers exceptional performance and innovative features.",
+      "content": "Detailed review of the Lenovo Smartphones Pro 2026. This product represents the pinnacle of smartphones technology.",
+      "price": 1899.99,
+      "rating": 4.8902802873579745,
+      "reviewCount": 192,
+      "imageUrl": "/images/placeholder.jpg",
+      "gallery": [
+        "/images/placeholder.jpg"
+      ],
+      "pageLink": "/product/lenovo-smartphones-pro-2026",
+      "pros": [
+        "Innovative design",
+        "Excellent connectivity",
+        "High performance"
+      ],
+      "cons": [
+        "Premium price point",
+        "Limited availability"
+      ],
+      "specifications": {
+        "brand": "Lenovo",
+        "model": "Pro 2026",
+        "warranty": "1 year"
+      },
+      "affiliateLinks": {
+        "amazon": "https://amazon.com/dp/4me065"
+      },
+      "category": "Smartphones",
+      "tags": [
+        "smartphones",
+        "lenovo",
+        "tech",
+        "review"
+      ],
+      "metaTitle": "Lenovo Smartphones Pro 2026 Review - TechReviews.AI",
+      "metaDescription": "Comprehensive review of the Lenovo Smartphones Pro 2026. Find out if this smartphones device is worth your investment.",
+      "keywords": [
+        "smartphones",
+        "lenovo",
+        "review",
+        "tech"
+      ],
+      "author": "Tech Editor",
+      "publishDate": "2025-02-23T04:42:18.568Z",
+      "lastUpdated": "2025-03-09T04:42:18.568Z",
+      "status": "published"
+    },
+    {
+      "_id": "product_1741495338571_15",
+      "title": "Dell Smart Home Pro 2024",
+      "slug": "dell-smart-home-pro-2024",
+      "description": "Experience the next level of smart home with the Dell Smart Home Pro 2024. This premium device offers exceptional performance and innovative features.",
+      "content": "Detailed review of the Dell Smart Home Pro 2024. This product represents the pinnacle of smart home technology.",
+      "price": 1999.99,
+      "rating": 4.707831547553226,
+      "reviewCount": 113,
+      "imageUrl": "/images/placeholder.jpg",
+      "gallery": [
+        "/images/placeholder.jpg"
+      ],
+      "pageLink": "/product/dell-smart-home-pro-2024",
+      "pros": [
+        "Excellent connectivity",
+        "High performance",
+        "Long battery life"
+      ],
+      "cons": [
+        "Premium price point",
+        "Limited availability"
+      ],
+      "specifications": {
+        "brand": "Dell",
+        "model": "Pro 2024",
+        "warranty": "1 year"
+      },
+      "affiliateLinks": {
+        "amazon": "https://amazon.com/dp/y993"
+      },
+      "category": "Smart Home",
+      "tags": [
+        "smart home",
+        "dell",
+        "tech",
+        "review"
+      ],
+      "metaTitle": "Dell Smart Home Pro 2024 Review - TechReviews.AI",
+      "metaDescription": "Comprehensive review of the Dell Smart Home Pro 2024. Find out if this smart home device is worth your investment.",
+      "keywords": [
+        "smart home",
+        "dell",
+        "review",
+        "tech"
+      ],
+      "author": "Tech Editor",
+      "publishDate": "2025-02-22T04:42:18.571Z",
+      "lastUpdated": "2025-03-09T04:42:18.571Z",
+      "status": "published",
+      "discount": 10
+    },
+    {
+      "_id": "product_1741495338571_16",
+      "title": "Apple Gaming Pro 2025",
+      "slug": "apple-gaming-pro-2025",
+      "description": "Experience the next level of gaming with the Apple Gaming Pro 2025. This premium device offers exceptional performance and innovative features.",
+      "content": "Detailed review of the Apple Gaming Pro 2025. This product represents the pinnacle of gaming technology.",
+      "price": 2099.99,
+      "rating": 4.531357329640571,
+      "reviewCount": 73,
+      "imageUrl": "/images/placeholder.jpg",
+      "gallery": [
+        "/images/placeholder.jpg"
+      ],
+      "pageLink": "/product/apple-gaming-pro-2025",
+      "pros": [
+        "High performance",
+        "Long battery life",
+        "Premium build quality"
+      ],
+      "cons": [
+        "Premium price point",
+        "Limited availability"
+      ],
+      "specifications": {
+        "brand": "Apple",
+        "model": "Pro 2025",
+        "warranty": "1 year"
+      },
+      "affiliateLinks": {
+        "amazon": "https://amazon.com/dp/k55c1k"
+      },
+      "category": "Gaming",
+      "tags": [
+        "gaming",
+        "apple",
+        "tech",
+        "review"
+      ],
+      "metaTitle": "Apple Gaming Pro 2025 Review - TechReviews.AI",
+      "metaDescription": "Comprehensive review of the Apple Gaming Pro 2025. Find out if this gaming device is worth your investment.",
+      "keywords": [
+        "gaming",
+        "apple",
+        "review",
+        "tech"
+      ],
+      "author": "Tech Editor",
+      "publishDate": "2025-02-21T04:42:18.571Z",
+      "lastUpdated": "2025-03-09T04:42:18.571Z",
+      "status": "published"
+    },
+    {
+      "_id": "product_1741495338571_17",
+      "title": "Samsung Laptops Pro 2026",
+      "slug": "samsung-laptops-pro-2026",
+      "description": "Experience the next level of laptops with the Samsung Laptops Pro 2026. This premium device offers exceptional performance and innovative features.",
+      "content": "Detailed review of the Samsung Laptops Pro 2026. This product represents the pinnacle of laptops technology.",
+      "price": 2199.99,
+      "rating": 4.50906707645055,
+      "reviewCount": 114,
+      "imageUrl": "/images/placeholder.jpg",
+      "gallery": [
+        "/images/placeholder.jpg"
+      ],
+      "pageLink": "/product/samsung-laptops-pro-2026",
+      "pros": [
+        "Long battery life",
+        "Premium build quality",
+        "Great value for money"
+      ],
+      "cons": [
+        "Premium price point",
+        "Limited availability"
+      ],
+      "specifications": {
+        "brand": "Samsung",
+        "model": "Pro 2026",
+        "warranty": "1 year"
+      },
+      "affiliateLinks": {
+        "amazon": "https://amazon.com/dp/1hpnym"
+      },
+      "category": "Laptops",
+      "tags": [
+        "laptops",
+        "samsung",
+        "tech",
+        "review"
+      ],
+      "metaTitle": "Samsung Laptops Pro 2026 Review - TechReviews.AI",
+      "metaDescription": "Comprehensive review of the Samsung Laptops Pro 2026. Find out if this laptops device is worth your investment.",
+      "keywords": [
+        "laptops",
+        "samsung",
+        "review",
+        "tech"
+      ],
+      "author": "Tech Editor",
+      "publishDate": "2025-02-20T04:42:18.572Z",
+      "lastUpdated": "2025-03-09T04:42:18.572Z",
+      "status": "published"
+    },
+    {
+      "_id": "product_1741495338572_18",
+      "title": "Sony Smartphones Pro 2024",
+      "slug": "sony-smartphones-pro-2024",
+      "description": "Experience the next level of smartphones with the Sony Smartphones Pro 2024. This premium device offers exceptional performance and innovative features.",
+      "content": "Detailed review of the Sony Smartphones Pro 2024. This product represents the pinnacle of smartphones technology.",
+      "price": 2299.99,
+      "rating": 4.309910962852672,
+      "reviewCount": 79,
+      "imageUrl": "/images/placeholder.jpg",
+      "gallery": [
+        "/images/placeholder.jpg"
+      ],
+      "pageLink": "/product/sony-smartphones-pro-2024",
+      "pros": [
+        "Premium build quality",
+        "Great value for money",
+        "Advanced features"
+      ],
+      "cons": [
+        "Premium price point",
+        "Limited availability"
+      ],
+      "specifications": {
+        "brand": "Sony",
+        "model": "Pro 2024",
+        "warranty": "1 year"
+      },
+      "affiliateLinks": {
+        "amazon": "https://amazon.com/dp/xv1inh"
+      },
+      "category": "Smartphones",
+      "tags": [
+        "smartphones",
+        "sony",
+        "tech",
+        "review"
+      ],
+      "metaTitle": "Sony Smartphones Pro 2024 Review - TechReviews.AI",
+      "metaDescription": "Comprehensive review of the Sony Smartphones Pro 2024. Find out if this smartphones device is worth your investment.",
+      "keywords": [
+        "smartphones",
+        "sony",
+        "review",
+        "tech"
+      ],
+      "author": "Tech Editor",
+      "publishDate": "2025-02-19T04:42:18.572Z",
+      "lastUpdated": "2025-03-09T04:42:18.572Z",
+      "status": "published",
+      "discount": 10
+    },
+    {
+      "_id": "product_1741495338573_19",
+      "title": "Microsoft Smart Home Pro 2025",
+      "slug": "microsoft-smart-home-pro-2025",
+      "description": "Experience the next level of smart home with the Microsoft Smart Home Pro 2025. This premium device offers exceptional performance and innovative features.",
+      "content": "Detailed review of the Microsoft Smart Home Pro 2025. This product represents the pinnacle of smart home technology.",
+      "price": 2399.99,
+      "rating": 4.9230701977299205,
+      "reviewCount": 121,
+      "imageUrl": "/images/placeholder.jpg",
+      "gallery": [
+        "/images/placeholder.jpg"
+      ],
+      "pageLink": "/product/microsoft-smart-home-pro-2025",
+      "pros": [
+        "Great value for money",
+        "Advanced features",
+        "User friendly interface"
+      ],
+      "cons": [
+        "Premium price point",
+        "Limited availability"
+      ],
+      "specifications": {
+        "brand": "Microsoft",
+        "model": "Pro 2025",
+        "warranty": "1 year"
+      },
+      "affiliateLinks": {
+        "amazon": "https://amazon.com/dp/ctjmd"
+      },
+      "category": "Smart Home",
+      "tags": [
+        "smart home",
+        "microsoft",
+        "tech",
+        "review"
+      ],
+      "metaTitle": "Microsoft Smart Home Pro 2025 Review - TechReviews.AI",
+      "metaDescription": "Comprehensive review of the Microsoft Smart Home Pro 2025. Find out if this smart home device is worth your investment.",
+      "keywords": [
+        "smart home",
+        "microsoft",
+        "review",
+        "tech"
+      ],
+      "author": "Tech Editor",
+      "publishDate": "2025-02-18T04:42:18.573Z",
+      "lastUpdated": "2025-03-09T04:42:18.573Z",
+      "status": "published"
+    },
+    {
+      "_id": "product_1741495338573_20",
+      "title": "Google Gaming Pro 2026",
+      "slug": "google-gaming-pro-2026",
+      "description": "Experience the next level of gaming with the Google Gaming Pro 2026. This premium device offers exceptional performance and innovative features.",
+      "content": "Detailed review of the Google Gaming Pro 2026. This product represents the pinnacle of gaming technology.",
+      "price": 2499.99,
+      "rating": 4.286214155335474,
+      "reviewCount": 86,
+      "imageUrl": "/images/placeholder.jpg",
+      "gallery": [
+        "/images/placeholder.jpg"
+      ],
+      "pageLink": "/product/google-gaming-pro-2026",
+      "pros": [
+        "Advanced features",
+        "User friendly interface",
+        "Innovative design"
+      ],
+      "cons": [
+        "Premium price point",
+        "Limited availability"
+      ],
+      "specifications": {
+        "brand": "Google",
+        "model": "Pro 2026",
+        "warranty": "1 year"
+      },
+      "affiliateLinks": {
+        "amazon": "https://amazon.com/dp/53v3w"
+      },
+      "category": "Gaming",
+      "tags": [
+        "gaming",
+        "google",
+        "tech",
+        "review"
+      ],
+      "metaTitle": "Google Gaming Pro 2026 Review - TechReviews.AI",
+      "metaDescription": "Comprehensive review of the Google Gaming Pro 2026. Find out if this gaming device is worth your investment.",
+      "keywords": [
+        "gaming",
+        "google",
+        "review",
+        "tech"
+      ],
+      "author": "Tech Editor",
+      "publishDate": "2025-02-17T04:42:18.573Z",
+      "lastUpdated": "2025-03-09T04:42:18.574Z",
+      "status": "published"
+    },
+    {
+      "_id": "product_1741495338574_21",
+      "title": "Asus Laptops Pro 2024",
+      "slug": "asus-laptops-pro-2024",
+      "description": "Experience the next level of laptops with the Asus Laptops Pro 2024. This premium device offers exceptional performance and innovative features.",
+      "content": "Detailed review of the Asus Laptops Pro 2024. This product represents the pinnacle of laptops technology.",
+      "price": 2599.99,
+      "rating": 4.506606471299305,
+      "reviewCount": 152,
+      "imageUrl": "/images/placeholder.jpg",
+      "gallery": [
+        "/images/placeholder.jpg"
+      ],
+      "pageLink": "/product/asus-laptops-pro-2024",
+      "pros": [
+        "User friendly interface",
+        "Innovative design",
+        "Excellent connectivity"
+      ],
+      "cons": [
+        "Premium price point",
+        "Limited availability"
+      ],
+      "specifications": {
+        "brand": "Asus",
+        "model": "Pro 2024",
+        "warranty": "1 year"
+      },
+      "affiliateLinks": {
+        "amazon": "https://amazon.com/dp/1d6by"
+      },
+      "category": "Laptops",
+      "tags": [
+        "laptops",
+        "asus",
+        "tech",
+        "review"
+      ],
+      "metaTitle": "Asus Laptops Pro 2024 Review - TechReviews.AI",
+      "metaDescription": "Comprehensive review of the Asus Laptops Pro 2024. Find out if this laptops device is worth your investment.",
+      "keywords": [
+        "laptops",
+        "asus",
+        "review",
+        "tech"
+      ],
+      "author": "Tech Editor",
+      "publishDate": "2025-02-16T04:42:18.574Z",
+      "lastUpdated": "2025-03-09T04:42:18.574Z",
+      "status": "published",
+      "discount": 10
+    },
+    {
+      "_id": "product_1741495338575_22",
+      "title": "Lenovo Smartphones Pro 2025",
+      "slug": "lenovo-smartphones-pro-2025",
+      "description": "Experience the next level of smartphones with the Lenovo Smartphones Pro 2025. This premium device offers exceptional performance and innovative features.",
+      "content": "Detailed review of the Lenovo Smartphones Pro 2025. This product represents the pinnacle of smartphones technology.",
+      "price": 2699.99,
+      "rating": 4.191220088619886,
+      "reviewCount": 195,
+      "imageUrl": "/images/placeholder.jpg",
+      "gallery": [
+        "/images/placeholder.jpg"
+      ],
+      "pageLink": "/product/lenovo-smartphones-pro-2025",
+      "pros": [
+        "Innovative design",
+        "Excellent connectivity",
+        "High performance"
+      ],
+      "cons": [
+        "Premium price point",
+        "Limited availability"
+      ],
+      "specifications": {
+        "brand": "Lenovo",
+        "model": "Pro 2025",
+        "warranty": "1 year"
+      },
+      "affiliateLinks": {
+        "amazon": "https://amazon.com/dp/0p2ixt"
+      },
+      "category": "Smartphones",
+      "tags": [
+        "smartphones",
+        "lenovo",
+        "tech",
+        "review"
+      ],
+      "metaTitle": "Lenovo Smartphones Pro 2025 Review - TechReviews.AI",
+      "metaDescription": "Comprehensive review of the Lenovo Smartphones Pro 2025. Find out if this smartphones device is worth your investment.",
+      "keywords": [
+        "smartphones",
+        "lenovo",
+        "review",
+        "tech"
+      ],
+      "author": "Tech Editor",
+      "publishDate": "2025-02-15T04:42:18.575Z",
+      "lastUpdated": "2025-03-09T04:42:18.575Z",
+      "status": "published"
+    },
+    {
+      "_id": "product_1741495338577_23",
+      "title": "Dell Smart Home Pro 2026",
+      "slug": "dell-smart-home-pro-2026",
+      "description": "Experience the next level of smart home with the Dell Smart Home Pro 2026. This premium device offers exceptional performance and innovative features.",
+      "content": "Detailed review of the Dell Smart Home Pro 2026. This product represents the pinnacle of smart home technology.",
+      "price": 2799.99,
+      "rating": 4.4348647472181275,
+      "reviewCount": 84,
+      "imageUrl": "/images/placeholder.jpg",
+      "gallery": [
+        "/images/placeholder.jpg"
+      ],
+      "pageLink": "/product/dell-smart-home-pro-2026",
+      "pros": [
+        "Excellent connectivity",
+        "High performance",
+        "Long battery life"
+      ],
+      "cons": [
+        "Premium price point",
+        "Limited availability"
+      ],
+      "specifications": {
+        "brand": "Dell",
+        "model": "Pro 2026",
+        "warranty": "1 year"
+      },
+      "affiliateLinks": {
+        "amazon": "https://amazon.com/dp/qehhsm"
+      },
+      "category": "Smart Home",
+      "tags": [
+        "smart home",
+        "dell",
+        "tech",
+        "review"
+      ],
+      "metaTitle": "Dell Smart Home Pro 2026 Review - TechReviews.AI",
+      "metaDescription": "Comprehensive review of the Dell Smart Home Pro 2026. Find out if this smart home device is worth your investment.",
+      "keywords": [
+        "smart home",
+        "dell",
+        "review",
+        "tech"
+      ],
+      "author": "Tech Editor",
+      "publishDate": "2025-02-14T04:42:18.577Z",
+      "lastUpdated": "2025-03-09T04:42:18.577Z",
+      "status": "published"
+    },
+    {
+      "_id": "product_1741495338577_24",
+      "title": "Apple Gaming Pro 2024",
+      "slug": "apple-gaming-pro-2024",
+      "description": "Experience the next level of gaming with the Apple Gaming Pro 2024. This premium device offers exceptional performance and innovative features.",
+      "content": "Detailed review of the Apple Gaming Pro 2024. This product represents the pinnacle of gaming technology.",
+      "price": 2899.99,
+      "rating": 4.081439793677124,
+      "reviewCount": 163,
+      "imageUrl": "/images/placeholder.jpg",
+      "gallery": [
+        "/images/placeholder.jpg"
+      ],
+      "pageLink": "/product/apple-gaming-pro-2024",
+      "pros": [
+        "High performance",
+        "Long battery life",
+        "Premium build quality"
+      ],
+      "cons": [
+        "Premium price point",
+        "Limited availability"
+      ],
+      "specifications": {
+        "brand": "Apple",
+        "model": "Pro 2024",
+        "warranty": "1 year"
+      },
+      "affiliateLinks": {
+        "amazon": "https://amazon.com/dp/ll9jhl"
+      },
+      "category": "Gaming",
+      "tags": [
+        "gaming",
+        "apple",
+        "tech",
+        "review"
+      ],
+      "metaTitle": "Apple Gaming Pro 2024 Review - TechReviews.AI",
+      "metaDescription": "Comprehensive review of the Apple Gaming Pro 2024. Find out if this gaming device is worth your investment.",
+      "keywords": [
+        "gaming",
+        "apple",
+        "review",
+        "tech"
+      ],
+      "author": "Tech Editor",
+      "publishDate": "2025-02-13T04:42:18.577Z",
+      "lastUpdated": "2025-03-09T04:42:18.577Z",
+      "status": "published",
+      "discount": 10
+    },
+    {
+      "_id": "product_1741495338578_25",
+      "title": "Samsung Laptops Pro 2025",
+      "slug": "samsung-laptops-pro-2025",
+      "description": "Experience the next level of laptops with the Samsung Laptops Pro 2025. This premium device offers exceptional performance and innovative features.",
+      "content": "Detailed review of the Samsung Laptops Pro 2025. This product represents the pinnacle of laptops technology.",
+      "price": 2999.99,
+      "rating": 4.390740670285667,
+      "reviewCount": 50,
+      "imageUrl": "/images/placeholder.jpg",
+      "gallery": [
+        "/images/placeholder.jpg"
+      ],
+      "pageLink": "/product/samsung-laptops-pro-2025",
+      "pros": [
+        "Long battery life",
+        "Premium build quality",
+        "Great value for money"
+      ],
+      "cons": [
+        "Premium price point",
+        "Limited availability"
+      ],
+      "specifications": {
+        "brand": "Samsung",
+        "model": "Pro 2025",
+        "warranty": "1 year"
+      },
+      "affiliateLinks": {
+        "amazon": "https://amazon.com/dp/ytb9i"
+      },
+      "category": "Laptops",
+      "tags": [
+        "laptops",
+        "samsung",
+        "tech",
+        "review"
+      ],
+      "metaTitle": "Samsung Laptops Pro 2025 Review - TechReviews.AI",
+      "metaDescription": "Comprehensive review of the Samsung Laptops Pro 2025. Find out if this laptops device is worth your investment.",
+      "keywords": [
+        "laptops",
+        "samsung",
+        "review",
+        "tech"
+      ],
+      "author": "Tech Editor",
+      "publishDate": "2025-02-12T04:42:18.578Z",
+      "lastUpdated": "2025-03-09T04:42:18.578Z",
+      "status": "published"
+    },
+    {
+      "_id": "product_1741495338579_26",
+      "title": "Sony Smartphones Pro 2026",
+      "slug": "sony-smartphones-pro-2026",
+      "description": "Experience the next level of smartphones with the Sony Smartphones Pro 2026. This premium device offers exceptional performance and innovative features.",
+      "content": "Detailed review of the Sony Smartphones Pro 2026. This product represents the pinnacle of smartphones technology.",
+      "price": 3099.99,
+      "rating": 4.915351552023851,
+      "reviewCount": 181,
+      "imageUrl": "/images/placeholder.jpg",
+      "gallery": [
+        "/images/placeholder.jpg"
+      ],
+      "pageLink": "/product/sony-smartphones-pro-2026",
+      "pros": [
+        "Premium build quality",
+        "Great value for money",
+        "Advanced features"
+      ],
+      "cons": [
+        "Premium price point",
+        "Limited availability"
+      ],
+      "specifications": {
+        "brand": "Sony",
+        "model": "Pro 2026",
+        "warranty": "1 year"
+      },
+      "affiliateLinks": {
+        "amazon": "https://amazon.com/dp/091bw"
+      },
+      "category": "Smartphones",
+      "tags": [
+        "smartphones",
+        "sony",
+        "tech",
+        "review"
+      ],
+      "metaTitle": "Sony Smartphones Pro 2026 Review - TechReviews.AI",
+      "metaDescription": "Comprehensive review of the Sony Smartphones Pro 2026. Find out if this smartphones device is worth your investment.",
+      "keywords": [
+        "smartphones",
+        "sony",
+        "review",
+        "tech"
+      ],
+      "author": "Tech Editor",
+      "publishDate": "2025-02-11T04:42:18.579Z",
+      "lastUpdated": "2025-03-09T04:42:18.579Z",
+      "status": "published"
+    },
+    {
+      "_id": "product_1741495338579_27",
+      "title": "Microsoft Smart Home Pro 2024",
+      "slug": "microsoft-smart-home-pro-2024",
+      "description": "Experience the next level of smart home with the Microsoft Smart Home Pro 2024. This premium device offers exceptional performance and innovative features.",
+      "content": "Detailed review of the Microsoft Smart Home Pro 2024. This product represents the pinnacle of smart home technology.",
+      "price": 3199.99,
+      "rating": 4.360797665763539,
+      "reviewCount": 193,
+      "imageUrl": "/images/placeholder.jpg",
+      "gallery": [
+        "/images/placeholder.jpg"
+      ],
+      "pageLink": "/product/microsoft-smart-home-pro-2024",
+      "pros": [
+        "Great value for money",
+        "Advanced features",
+        "User friendly interface"
+      ],
+      "cons": [
+        "Premium price point",
+        "Limited availability"
+      ],
+      "specifications": {
+        "brand": "Microsoft",
+        "model": "Pro 2024",
+        "warranty": "1 year"
+      },
+      "affiliateLinks": {
+        "amazon": "https://amazon.com/dp/d9e3ro"
+      },
+      "category": "Smart Home",
+      "tags": [
+        "smart home",
+        "microsoft",
+        "tech",
+        "review"
+      ],
+      "metaTitle": "Microsoft Smart Home Pro 2024 Review - TechReviews.AI",
+      "metaDescription": "Comprehensive review of the Microsoft Smart Home Pro 2024. Find out if this smart home device is worth your investment.",
+      "keywords": [
+        "smart home",
+        "microsoft",
+        "review",
+        "tech"
+      ],
+      "author": "Tech Editor",
+      "publishDate": "2025-02-10T04:42:18.579Z",
+      "lastUpdated": "2025-03-09T04:42:18.579Z",
+      "status": "published",
+      "discount": 10
     }
   ]
-} 
+}

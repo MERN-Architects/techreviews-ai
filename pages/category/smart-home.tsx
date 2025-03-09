@@ -164,7 +164,7 @@ export default function SmartHomeCategoryPage() {
                       </span>
                       <div className="flex items-center text-yellow-400">
                         <span className="text-lg">★</span>
-                        <span className="text-gray-600 text-sm ml-1">{product.rating}</span>
+                        <span className="text-gray-600 text-sm ml-1">{Number(product.rating).toFixed(1)}</span>
                       </div>
                     </div>
                     <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 line-clamp-2 hover:text-primary-600 transition-colors">
@@ -279,15 +279,15 @@ export default function SmartHomeCategoryPage() {
               Get the latest smart home product reviews and automation tips.
             </p>
             <form className="max-w-md mx-auto" onSubmit={(e) => e.preventDefault()}>
-              <div className="flex gap-4">
+              <div className="flex flex-col sm:flex-row gap-4">
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="flex-1 px-4 py-3 rounded-lg text-gray-900"
+                  className="flex-1 px-4 py-3 rounded-lg text-gray-900 w-full"
                 />
                 <button
                   type="submit"
-                  className="px-6 py-3 bg-white text-primary-600 rounded-lg font-medium hover:bg-gray-100 transition-colors"
+                  className="w-full sm:w-auto px-6 py-3 bg-white text-primary-600 rounded-lg font-medium hover:bg-gray-100 transition-colors"
                 >
                   Subscribe
                 </button>

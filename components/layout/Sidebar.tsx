@@ -1,8 +1,9 @@
+import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import AdSense from '../AdSense';
-import productsData from '@/data/products.json';
+import productsData from '../../data/products.json';
 
 export default function Sidebar() {
   const products = productsData.products;
@@ -50,17 +51,17 @@ export default function Sidebar() {
   return (
     <aside className="space-y-8">
       {/* Categories */}
-      <div className="bg-white rounded-lg shadow-sm p-6">
-        <h2 className="text-xl font-semibold mb-4">Categories</h2>
+      <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm p-6">
+        <h2 className="text-xl font-semibold mb-4 dark:text-white">Categories</h2>
         <div className="space-y-2">
           {categories.map((category) => (
             <Link
               key={category.name}
               href={`/category/${category.slug}`}
-              className="flex items-center justify-between py-2 text-gray-600 hover:text-primary-600 transition-colors"
+              className="flex items-center justify-between py-2 text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
             >
-              <span className="font-medium">{category.name}</span>
-              <span className="bg-primary-50 text-primary-600 px-3 py-1 rounded-full text-sm font-medium">
+              <span className="font-medium dark:text-gray-300">{category.name}</span>
+              <span className="bg-primary-50 dark:bg-primary-900/50 text-primary-600 dark:text-primary-400 px-3 py-1 rounded-full text-sm font-medium">
                 {category.count}
               </span>
             </Link>
@@ -69,8 +70,8 @@ export default function Sidebar() {
       </div>
 
       {/* Popular Posts */}
-      <div className="bg-white rounded-lg shadow-sm p-6">
-        <h2 className="text-xl font-semibold mb-4">Top Rated Products</h2>
+      <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm p-6">
+        <h2 className="text-xl font-semibold mb-4 dark:text-white">Top Rated Products</h2>
         <div className="space-y-4">
           {popularProducts.map((product) => (
             <motion.div
@@ -89,20 +90,22 @@ export default function Sidebar() {
               <div className="flex-1 min-w-0">
                 <Link
                   href={product.pageLink}
-                  className="text-sm font-medium text-gray-900 hover:text-primary-600 line-clamp-2"
+                  className="text-sm font-medium text-gray-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-400 line-clamp-2"
                 >
                   {product.title}
                 </Link>
                 <div className="flex items-center space-x-2 mt-1">
-                  <span className="text-xs text-primary-600">{product.category}</span>
+                  <span className="text-xs text-primary-600 dark:text-primary-400">{product.category}</span>
                   <div className="flex items-center">
                     <span className="text-yellow-400 text-xs">★</span>
-                    <span className="text-xs text-gray-500 ml-1">{product.rating}</span>
+                    <span className="text-xs text-gray-500 dark:text-gray-400 ml-1">
+                      {Number(product.rating).toFixed(1)}
+                    </span>
                   </div>
-                  <span className="text-xs text-gray-500">({product.reviewCount} reviews)</span>
+                  <span className="text-xs text-gray-500 dark:text-gray-400">({product.reviewCount} reviews)</span>
                 </div>
                 <div className="mt-1">
-                  <span className="text-sm font-semibold text-primary-600">${product.price}</span>
+                  <span className="text-sm font-semibold text-primary-600 dark:text-primary-400">${product.price}</span>
                 </div>
               </div>
             </motion.div>
