@@ -30,8 +30,10 @@ jobs:
           AMAZON_SECRET_KEY: ${{ secrets.AMAZON_SECRET_KEY }}
           AMAZON_PARTNER_TAG: ${{ secrets.AMAZON_PARTNER_TAG }}
         run: |
-          npm install -g typescript ts-node
-          NODE_OPTIONS="--loader ts-node/esm --no-warnings" npx ts-node --esm scripts/updateProducts.ts
+          npm install -g typescript
+          npm install -g ts-node
+          export NODE_OPTIONS="--loader ts-node/esm --no-warnings"
+          npx ts-node --esm scripts/updateProducts.ts
         
       - name: Commit changes
         run: |
