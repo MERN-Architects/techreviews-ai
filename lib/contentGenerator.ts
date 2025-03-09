@@ -117,8 +117,10 @@ export async function generateProductReview(data: ProductData): Promise<Partial<
       price: data.basePrice,
       rating: 0, // Will be updated based on user reviews
       reviewCount: 0,
-      imageUrl: imageResponse.data[0].url,
-      gallery: galleryImages.map((img) => img.data[0].url),
+      imageUrl: imageResponse.data[0].url ?? '',
+      gallery: galleryImages
+        .map((img) => img.data[0].url)
+        .filter((url): url is string => url !== undefined),
       pros,
       cons,
       specifications: data.specifications,
