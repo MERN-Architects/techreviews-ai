@@ -9,7 +9,7 @@ import productsData from '@/data/products.json';
 export default function DealsCategoryPage() {
   const [sortBy, setSortBy] = useState('latest');
   const [priceRange, setPriceRange] = useState('all');
-  const dealsProducts = productsData.products.filter(p => p.onSale || p.discount);
+  const dealsProducts = productsData.products.filter(p => p.discount);
 
   const sortOptions = [
     { value: 'latest', label: 'Latest' },
