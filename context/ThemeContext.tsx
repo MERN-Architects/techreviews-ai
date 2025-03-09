@@ -9,7 +9,6 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [isDarkMode, setIsDarkMode] = useState(false);
-  const [isInitialized, setIsInitialized] = useState(false);
 
   useEffect(() => {
     // Check if user has a theme preference in localStorage
@@ -17,12 +16,9 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     
     setIsDarkMode(savedTheme === 'dark' || (!savedTheme && prefersDark));
-    setIsInitialized(true);
   }, []);
 
   useEffect(() => {
-    if (!isInitialized) return;
-    
     // Update document class and localStorage when theme changes
     if (isDarkMode) {
       document.documentElement.classList.add('dark');
@@ -31,16 +27,11 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
       document.documentElement.classList.remove('dark');
       localStorage.setItem('theme', 'light');
     }
-  }, [isDarkMode, isInitialized]);
+  }, [isDarkMode]);
 
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode);
   };
-
-  // Don't render children until theme is initialized
-  if (!isInitialized) {
-    return null;
-  }
 
   return (
     <ThemeContext.Provider value={{ isDarkMode, toggleDarkMode }}>

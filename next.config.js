@@ -4,11 +4,13 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'oaidalleapicontent.blob.core.windows.net',
-        pathname: '/**',
+        hostname: '**',
       },
     ],
   },
+  experimental: {
+    serverActions: true,
+  },
 };
 
-module.exports = nextConfig; 
+export default nextConfig; 

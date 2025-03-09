@@ -16,7 +16,6 @@ export interface Product {
   cons: string[];
   affiliateLinks: {
     amazon: string;
-    bestbuy: string;
   };
   tags: string[];
   metaTitle: string;

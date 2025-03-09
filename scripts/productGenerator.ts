@@ -56,6 +56,7 @@ async function generateProductWithAI(): Promise<Product> {
     specifications: aiData.specifications || {},
     affiliateLinks: {
       amazon: `https://amazon.com/dp/${Math.random().toString(36).substring(7)}`,
+      bestbuy: `https://bestbuy.com/site/${Math.random().toString(36).substring(7)}`
     },
     category: category,
     tags: [category.toLowerCase(), 'tech', 'review'],
